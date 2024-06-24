@@ -7,9 +7,9 @@
 .footer {
     background-color: #000;
     color: #fff;
-    padding: 20px 0;
+    padding: 0px;
     text-align: center;
-    height: 70vh;
+    margin: auto;
 }
 
 .footer-content {
@@ -17,9 +17,10 @@
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding: 0 50px;
+    padding: 0 20px;
     height: 40vh;
     column-gap: 5rem;
+    margin: auto;
 
 }
 
@@ -107,4 +108,5 @@
      margin-bottom: -30px;
    }
 }
+
 

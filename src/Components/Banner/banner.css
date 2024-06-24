@@ -39,7 +39,8 @@
 }
 
 .heading {
-    letter-spacing: 4px;
+    word-spacing: 9px;
+    letter-spacing: 1px;
 }
 
 .banner-para {

@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import {FaGithub} from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 export function Footer() {
     return (
@@ -8,7 +8,7 @@ export function Footer() {
             <div className="footer-content">
                 <div className="footer-left">
                     <h2 className="footer-heading">SOBIA SOOMRO</h2>
-                    <p className='footer-para'>Certified Front-End Developer | Passionate about Creating Outstanding User Experiences</p>
+                    <p className="footer-para">Certified Front-End Developer | Passionate about Creating Outstanding User Experiences</p>
                 </div>
                 <div className="footer-right">
                     <h2 className="footer-heading">SOCIAL</h2>
@@ -23,6 +23,7 @@ export function Footer() {
         </footer>
     );
 }
+
 
 
 
