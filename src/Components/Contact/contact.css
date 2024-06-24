@@ -149,6 +149,11 @@ label {
     font-size: 0.8rem;
   }
 
+  .contact-para {
+    font-size: 1.2rem;
+    margin-top: -30px;
+  }
+
   .form-field-text {
     height: 120px;
   }

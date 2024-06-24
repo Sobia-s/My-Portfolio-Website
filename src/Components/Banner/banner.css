@@ -71,9 +71,17 @@
     transform: translateY(-3px);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .banner-text {
-        font-size: 1.3rem;
         padding: 30px;
+    }
+
+    .heading{
+        font-size: 1.9rem;
+    }
+
+    .banner-para {
+        font-size: 1.2rem;
+        margin-top: 15px;
     }
 }

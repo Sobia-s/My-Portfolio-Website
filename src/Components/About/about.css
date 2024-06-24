@@ -89,5 +89,10 @@
 
 }
 
+@media (max-width: 650px){
+    .Slist {
+        gap: 3px;
+    }
+}
 
 
