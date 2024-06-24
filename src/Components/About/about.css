@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container {
+    width: 100%;
+    padding: 3px;
+    margin: 10px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #000000;
+}
+
+.container .title-underline {
+    width: 27px;
+    height: 4px;
+    border-radius: 2px;
+    border: 0;
+    background: #0062B9;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    margin-top: 10px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+    justify-content: center;
+    text-align: left;
+    margin: auto;
+    max-width: 120rem;
+    width: 92%;
+}
+
+.aboutMe h3, .skills h3 {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.aboutMe p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    word-spacing: 4px;
+    color: #666;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    text-align: left;
+}
+
+.Slist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 90%;
+}
+
+.Slist span {
+    padding: 8px 17px;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    background: rgba(153,153,153,0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #777
+}
+
+@media (max-width: 800px) {
+    .content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .aboutMe, .skills {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+}
+
+
+
