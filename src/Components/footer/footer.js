@@ -8,7 +8,7 @@ export function Footer() {
             <div className="footer-content">
                 <div className="footer-left">
                     <h2 className="footer-heading">SOBIA SOOMRO</h2>
-                    <p>Certified Front-End Developer | Passionate about Creating Outstanding User Experiences</p>
+                    <p className='footer-para'>Certified Front-End Developer | Passionate about Creating Outstanding User Experiences</p>
                 </div>
                 <div className="footer-right">
                     <h2 className="footer-heading">SOCIAL</h2>
