@@ -11,7 +11,7 @@ export function Home() {
     return (
         <>
             <Nav />
-            <section id="banner"><Banner /></section> {/* Ensure id matches the link target */}
+            <section id="banner"><Banner /></section>
             <section id="about" style={{ paddingTop: '80px' }}><About /></section>
             <section id="projects" style={{ paddingTop: '80px' }}><Projects /></section>
             <section id="certificate" style={{ paddingTop: '80px' }}><Certificate /></section>

@@ -18,7 +18,7 @@ export function Footer() {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>© Copyright {new Date().getFullYear()}. Made by <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">Sobia Soomro</a></p>
+                <p>© Copyright {new Date().getFullYear()}. Made by <a href="https://sobia-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Sobia Soomro</a></p>
             </div>
         </footer>
     );
