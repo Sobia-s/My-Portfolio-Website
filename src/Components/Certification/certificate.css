@@ -130,13 +130,13 @@
 }
 
 .carousel img {
-  max-width: 88%;
+  max-width: 85%;
   max-height: 90vh;
 }
 
 .arrow {
   background: none;
-  /* border: none; */
+  border: none;
   font-size: 35px;
   cursor: pointer;
   padding: 10px;
