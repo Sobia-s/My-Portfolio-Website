@@ -224,7 +224,7 @@
     }
 }
 
-.modal {
+/* .modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -258,7 +258,7 @@
 
 .modal_left, .modal_right {
     background: none;
-    /* border: none; */
+    border: none;
     font-size: 40px;
     cursor: pointer;
     padding: 5px;
@@ -268,6 +268,7 @@
     transform: translateY(-50%);
     z-index: 1001;
 }
+
 
 @media screen and (max-width: 900px ) {
   .modal-image{
@@ -285,17 +286,121 @@
 #modal_close {
     position: absolute;
     top: 0rem;
+    top: 1rem;
     right: 0.5rem;
+    right: 1rem;
     background: none;
     color: #ffffff;
     border: none;
     font-size: 1.8rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 
 .modal button:disabled {
     color: #838282;
     cursor: not-allowed;
-}
+} */
 
 
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  #modal_close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    color: #ffffff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .carousel img {
+    max-width: 100%;
+    max-height: 90vh;
+  }
+
+  .arro {
+    background: none;
+    /* border: none; */
+    font-size: 35px;
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1001;
+  }
+
+  .arro.left {
+    left: 20px;
+    color: black;
+  }
+
+  .arro.right {
+    right: 20px;
+    color: black;
+  }
+
+  .arro[disabled] {
+    cursor: not-allowed;
+    color: #c1c0c0;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 768px) {
+    .modal-content {
+      padding: 1rem;
+    }
+
+    #modal_close {
+      top: 5px;
+      right: 10px;
+      font-size: 25px;
+    }
+
+    .arro {
+      font-size: 25px;
+      padding: 5px;
+    }
+
+    .arro.left {
+      left: 10px;
+    }
+
+    .arro.right {
+      right: 10px;
+    }
+  }
