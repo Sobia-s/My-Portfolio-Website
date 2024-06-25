@@ -118,16 +118,6 @@ export function Projects() {
                     &gt;
                 </button>
             </div>
-            {/* {showModal && (
-                <div className="modal">
-                <div className="modal-content">
-                   <button className="modal_left" onClick={handleScreenshotPrevious} disabled={currentScreenshot === 0}>&lt;</button>
-                   <img src={projects[currentIndex].screenshots[currentScreenshot]} alt={`Screenshot ${currentScreenshot + 1}`} className="modal-image" />
-                   <button className="modal_right" onClick={handleScreenshotNext} disabled={currentScreenshot === projects[currentIndex].screenshots.length - 1}>&gt;</button>
-                 </div>
-                    <button id="modal_close" onClick={() => setShowModal(false)}>X</button>
-                </div>
-            )} */}
             {showModal && (
           <div className="modal">
             <div className="modal-content">

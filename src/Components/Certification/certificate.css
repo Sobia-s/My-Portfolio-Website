@@ -136,11 +136,11 @@
 
 .arrow {
   background: none;
-  border: none;
   font-size: 35px;
   cursor: pointer;
   padding: 10px;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
+  border-color: #ffffff;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
@@ -149,12 +149,10 @@
 
 .arrow.left {
   left: 20px;
-  color: black;
 }
 
 .arrow.right {
   right: 20px;
-  color: black;
 }
 
 .arrow[disabled] {
@@ -197,5 +195,23 @@
   }
 }
 
+@media (max-width: 580px){
+   .modal-content {
+     width: 85%;
+     height: auto;
+   }
 
+   .arrow {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .arrow.left {
+    left: 2px;
+  }
+
+  .arrow.right {
+    right: 2px;
+  }
+}
 
