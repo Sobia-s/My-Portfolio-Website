@@ -59,13 +59,16 @@ export function Projects() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currentScreenshot, setCurrentScreenshot] = useState(0);
     const [showModal, setShowModal] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     const handleNext = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1 < projects.length ? prevIndex + 1 : prevIndex));
+        setLoading(true);
     };
 
     const handlePrevious = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 >= 0 ? prevIndex - 1 : prevIndex));
+        setLoading(true);
     };
 
     const handleScreenshotNext = () => {
@@ -88,6 +91,7 @@ export function Projects() {
     const preloadImage = (src) => {
         const img = new Image();
         img.src = src;
+        img.onload = () => setLoading(false);
     };
 
     const preloadNextImage = () => {
@@ -97,6 +101,7 @@ export function Projects() {
     };
 
     useEffect(() => {
+        preloadImage(projects[currentIndex].image);
         preloadNextImage();
     }, [currentIndex]);
 
@@ -115,7 +120,11 @@ export function Projects() {
                 <div className="p-list">
                     {projects.slice(currentIndex, currentIndex + 1).map((project, index) => (
                         <div className="p-item" key={index}>
-                            <img src={project.image} alt={project.title} className="p-image" loading="lazy" />
+                            {loading ? (
+                                <div className="spinner">Loading...</div>
+                            ) : (
+                                <img src={project.image} alt={project.title} className="p-image" loading="lazy" />
+                            )}
                             <div className="p-content">
                                 <h3>{project.title}</h3>
                                 <h4>Technologies: {project.technologies}</h4>
@@ -148,4 +157,3 @@ export function Projects() {
         </div>
     );
 }
-
