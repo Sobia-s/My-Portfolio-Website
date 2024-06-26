@@ -30,7 +30,7 @@
 }
 
 .banner-text {
-    position: relative; /* Ensure it respects z-index */
+    position: relative;
     font-size: 1.7rem;
     padding: 1rem;
     line-height: 1.5;
@@ -51,7 +51,7 @@
 .button-container {
     position: relative;
     z-index: 2;
-    margin-top: 20px; /* Add some space between the text and the button */
+    margin-top: 20px;
 }
 
 #banner_button {
