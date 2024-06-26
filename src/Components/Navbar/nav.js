@@ -47,6 +47,7 @@ export function Nav() {
                 <li><Link to="certificate" smooth={true} duration={500} onClick={closeMenu}>CERTIFICATES</Link></li>
                 <li><Link to="contact" smooth={true} duration={500} onClick={closeMenu}>CONTACT</Link></li>
                 <li><a href="https://github.com/Sobia-s" target="_blank" rel="noopener noreferrer"><FaGithub size={24} /></a></li>
+                {/* <li> <a href="https://github.com/Sobia-s" target="_blank" rel="noopener noreferrer"><FaGithub size={24} /></a></li> */}
             </ul>
         </nav>
     );

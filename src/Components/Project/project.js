@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './project.css';
-import img1 from './images/capstone.png';
-import img2 from './images/html.png';
-import img3 from './images/react.png';
-import img4 from './images/Blog/blog.jpg';
-import img4_1 from './images/Blog/blog1.jpg';
-import img4_2 from './images/Blog/blog2.jpg';
-import img4_3 from './images/Blog/blog3.png';
-import img5 from './images/Photography/banner.jpg';
-import img5_1 from './images/Photography/home.webp';
-import img5_2 from './images/Photography/gallery.png';
-import img5_3 from  './images/Photography/contact.png';
+import img1 from './images/capstone.webp';
+import img2 from './images/html.webp';
+import img3 from './images/react.webp';
+import img4 from './images/Blog/blog.webp';
+import img4_1 from './images/Blog/blog1.webp';
+import img4_2 from './images/Blog/blog2.webp';
+import img4_3 from './images/Blog/blog3.webp';
+import img5 from './images/photography/banner.webp';
+import img5_1 from './images/photography/home.webp';
+import img5_2 from './images/photography/gallery.webp';
+import img5_3 from './images/photography/contact.webp';
 
 export function Projects() {
     const projects = [
@@ -85,6 +85,21 @@ export function Projects() {
         }
     };
 
+    const preloadImage = (src) => {
+        const img = new Image();
+        img.src = src;
+    };
+
+    const preloadNextImage = () => {
+        if (currentIndex + 1 < projects.length) {
+            preloadImage(projects[currentIndex + 1].image);
+        }
+    };
+
+    useEffect(() => {
+        preloadNextImage();
+    }, [currentIndex]);
+
     return (
         <div className="project">
             <h2 className="p-title">Projects</h2>
@@ -100,7 +115,7 @@ export function Projects() {
                 <div className="p-list">
                     {projects.slice(currentIndex, currentIndex + 1).map((project, index) => (
                         <div className="p-item" key={index}>
-                            <img src={project.image} alt={project.title} className="p-image" />
+                            <img src={project.image} alt={project.title} className="p-image" loading="lazy" />
                             <div className="p-content">
                                 <h3>{project.title}</h3>
                                 <h4>Technologies: {project.technologies}</h4>
@@ -119,17 +134,18 @@ export function Projects() {
                 </button>
             </div>
             {showModal && (
-          <div className="modal">
-            <div className="modal-content">
-              <div className="carousel">
-              <button className="arro left" onClick={handleScreenshotPrevious} disabled={currentScreenshot === 0}>&lt;</button>
-              <img src={projects[currentIndex].screenshots[currentScreenshot]} alt={`Screenshot ${currentScreenshot + 1}`} className="modal-image" />
-              <button className="arro right" onClick={handleScreenshotNext} disabled={currentScreenshot === projects[currentIndex].screenshots.length - 1}>&gt;</button>
-              </div>
-            </div>
-            <button id="modal_close" onClick={() => setShowModal(false)}>X</button>
-          </div>
-        )}
+                <div className="modal">
+                    <div className="modal-content">
+                        <div className="carousel">
+                            <button className="arro left" onClick={handleScreenshotPrevious} disabled={currentScreenshot === 0}>&lt;</button>
+                            <img src={projects[currentIndex].screenshots[currentScreenshot]} alt={`Screenshot ${currentScreenshot + 1}`} className="modal-image" loading="lazy" />
+                            <button className="arro right" onClick={handleScreenshotNext} disabled={currentScreenshot === projects[currentIndex].screenshots.length - 1}>&gt;</button>
+                        </div>
+                    </div>
+                    <button id="modal_close" onClick={() => setShowModal(false)}>X</button>
+                </div>
+            )}
         </div>
     );
 }
+

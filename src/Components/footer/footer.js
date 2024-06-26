@@ -14,6 +14,7 @@ export function Footer() {
                      <h3 id="footer-socials">SOCIAL</h3>
                      <div className="social-icons">
                          <a href="https://github.com/Sobia-s" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                         {/* <a href="https://github.com/Sobia-s" target="_blank" rel="noopener noreferrer"><FaGithub size={24} /></a> */}
                      </div>
                  </div>
              </div>
