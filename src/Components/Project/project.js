@@ -26,7 +26,7 @@ export function Projects() {
             technologies: "HTML, CSS, JavaScript",
             image: img2,
             description: "Developed two static web pages with responsive layouts and appealing visuals using HTML and CSS. Additionally, created a dynamic Tic-Tac-Toe game with HTML, CSS, and JavaScript, demonstrating foundational skills in web development and interactive design.",
-            button: "https://my-html-projects.netlify.app/"
+            button: "https://1st-html-css.netlify.app/"
         },
         {
             title: "React Projects",
