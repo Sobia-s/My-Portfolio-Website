@@ -92,7 +92,7 @@
 }
 
 .nav-items li a svg {
-    vertical-align: middle; /* Align icon vertically */
+    vertical-align: middle;
 }
 
 @media (max-width: 768px) {
