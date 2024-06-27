@@ -246,7 +246,6 @@ export function Projects() {
                                 src={project.image}
                                 alt={project.title}
                                 className="p-image"
-                                // effect="opacity"
                             />
                             <div className="p-content">
                                 <h3>{project.title}</h3>
