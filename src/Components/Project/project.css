@@ -469,7 +469,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1;
+    z-index: 1001;
 }
 
 #arrow-button-left,
@@ -610,17 +610,6 @@
     overflow: hidden;
 }
 
-#modal_close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    color: #ffffff;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
 .carousel {
     display: flex;
     align-items: center;
@@ -659,6 +648,17 @@
     color: #333333;
     border-color: #333333;
     opacity: 0.5;
+}
+
+#modal_close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    color: #ffffff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
