@@ -121,13 +121,17 @@
 
 #arrow-button-left,
 #arrow-button-right {
-    background: none;
+    color: #ffffff;
+    background-color: #333333;
     border: none;
-    font-size: 2rem;
-    padding: 3px;
-    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    width: 36px;
+    font-size: 1.5rem;
+    font-weight: 650;
+    padding: 4px;
     cursor: pointer;
     position: absolute;
+    text-align: center;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
@@ -143,7 +147,8 @@
 
 #arrow-button-left:disabled,
 #arrow-button-right:disabled {
-    color: #c1bfbf;
+    color: #ffffff;
+    background-color: #bab8b8;
     cursor: not-allowed;
 }
 
@@ -214,12 +219,16 @@
     }
 
     #arrow-button-left {
-        left: -1rem;
+        left: -2rem;
+        width: 23px;
+        font-size: 13px;
         cursor: pointer;
     }
 
     #arrow-button-right {
-        right: -1rem;
+        right: -2rem;
+        width: 23px;
+        font-size: 13px;
         cursor: pointer;
     }
 }
