@@ -16,9 +16,9 @@ export function Projects() {
     const projects = [
         {
             title: "React Capstone Project",
-            technologies: "React, JSX, HTML, CSS",
+            technologies: "React, JSX, JavaScript, and CSS",
             image: img1,
-            description: "This Project is made on React with brand name Little Lemon where users find difficulties to table booking system and I help them in solving this issue now the web app is totally working with successful reservation and also good aesthetic design with responsiveness.",
+            description: "This project is built with React and branded as Little Lemon. It addresses issues with the table booking system, providing a fully functional reservation feature and a responsive, aesthetically pleasing design.",
             button: "https://my-capstone.netlify.app/"
         },
         {
@@ -30,16 +30,16 @@ export function Projects() {
         },
         {
             title: "React Projects",
-            technologies: "React, JSX, HTML, CSS",
+            technologies: "React, JSX, JavaScript, and CSS",
             image: img3,
             description: (
-                <>
-                    <strong>Calculator:</strong> A user-friendly calculator for basic arithmetic operations.<br />
-                    <strong>To-Do App:</strong> A task management application for adding and deleting tasks efficiently.<br />
-                    <strong>Personal Portfolio:</strong> A modern, responsive portfolio using Chakra UI, showcasing projects and contact details.
-                </>
+              <>
+                <strong>Calculator:</strong> A user-friendly calculator for basic arithmetic operations.<br />
+                <strong>To-Do App:</strong> A task management application for adding and deleting tasks efficiently.<br />
+                <strong>Personal Portfolio:</strong> A modern, responsive portfolio using Chakra UI, showcasing projects and contact details.
+              </>
             ),
-            button: "https://myreact-projects.netlify.app/"
+            "button": "https://myreact-projects.netlify.app/"
         },
         {
             title: "Blog Website",
