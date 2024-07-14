@@ -14,7 +14,7 @@ export function Footer() {
                      <h3 id="footer-socials">SOCIAL</h3>
                      <div className="social-icons">
                          <a href="https://github.com/Sobia-s" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                         <a href="https://www.linkedin.com/in/sobia-soomro97/" target='_blank' rel='noopener noreferrer'><FaLinkedin /></a>
+                         <a href="https://www.linkedin.com/in/sobiasoomro/" target='_blank' rel='noopener noreferrer'><FaLinkedin /></a>
                      </div>
                  </div>
              </div>
