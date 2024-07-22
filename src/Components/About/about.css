@@ -11,12 +11,13 @@
 
 .title {
     text-align: center;
+    margin-top: 78px;
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #000000;
+    color: #0e315f;
 }
 
 .container .title-underline {
@@ -24,7 +25,7 @@
     height: 4px;
     border-radius: 2px;
     border: 0;
-    background: #0062B9;
+    background: linear-gradient(to right, #0f396f, #4d728f);;
     margin: 0 auto;
     margin-bottom: 55px;
     margin-top: 10px;
@@ -43,7 +44,7 @@
 
 .aboutMe h3, .skills h3 {
     font-size: 1.5rem;
-    color: #000000;
+    color: #0e315f;
     margin-bottom: 20px;
 }
 
@@ -52,7 +53,7 @@
     line-height: 1.6;
     letter-spacing: 0.3px;
     word-spacing: 4px;
-    color: #666;
+    color: #2d2c2c;
     margin-bottom: 10px;
     margin-top: -5px;
     text-align: left;
@@ -73,7 +74,7 @@
     background: rgba(153,153,153,0.2);
     border-radius: 5px;
     font-weight: 600;
-    color: #777
+    color: #636262;
 }
 
 @media (max-width: 800px) {

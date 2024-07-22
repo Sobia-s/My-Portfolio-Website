@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 
-export function About() {
+function About() {
   return (
     <div className="container">
       <h2 className="title">About Me</h2>
@@ -10,10 +10,10 @@ export function About() {
         <div className="aboutMe">
           <h3>Get to know me!</h3>
           <p>
-           My name is Sobia, and I am dedicated to crafting user-friendly and aesthetically pleasing web interfaces. Through various courses and hands-on projects, I have established a robust foundation in developing responsive and engaging web applications that prioritize exceptional user experiences.
+            My name is Sobia, and I am certified in creating user-friendly and visually appealing web interfaces. Through extensive coursework and practical projects, I have developed a strong proficiency in building responsive and engaging web applications that prioritize excellent user experiences.
           </p>
           <p>
-           I firmly believe in the importance of continuous learning and am eager to explore new technologies. With my solid skills, I am seeking an entry-level position where I can contribute to a dynamic development team and further hone my abilities as a developer.
+          I am eager to continuously learn and explore emerging technologies. I am seeking an entry-level position to contribute to a dynamic team and refine my development skills.
           </p>
         </div>
         <div className="skills">
@@ -38,4 +38,4 @@ export function About() {
 
 
 
-
+export default About;

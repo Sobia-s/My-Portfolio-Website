@@ -36,7 +36,7 @@ function Contact() {
     <div className="contact-container">
       <h1 className='contact-heading'>Contact</h1>
       <hr className="title-underline"/>
-      <p className='contact-para'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
+      <p className='contact-para'>Please feel free to contact me by submitting the form below. I will respond as soon as possible.</p>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input
@@ -79,3 +79,5 @@ function Contact() {
 }
 
 export default Contact;
+
+

@@ -2,24 +2,17 @@
   padding: 0;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
+  box-sizing: border-box;
 }
 
 .certificate-container {
-  display: flex;
   background-color: #edecec;
-  justify-content: space-around;
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  border-radius: 5px;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.5s ease;
-  flex-direction: column;
   align-items: center;
-  max-width: 80%;
-  padding: 4rem;
+  padding: 20px;
+  padding-top: 120px;
+  min-height: 100vh;
 }
 
 #certificate_heading {
@@ -29,8 +22,7 @@
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #000000;
-  margin-top: 40px;
+  color: #0e315f;
 }
 
 .certificate-underline {
@@ -38,7 +30,7 @@
   height: 4px;
   border-radius: 2px;
   border: 0;
-  background: #0062B9;
+  background: linear-gradient(to right, #0f396f, #4d728f);
   margin: 0 auto;
   margin-bottom: 55px;
   margin-top: 15px;
@@ -46,18 +38,20 @@
 
 .certificate-container p {
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   word-spacing: 3px;
-  color: #666;
+  color: #565555;
   text-align: center;
   padding: 10px;
+  margin-top: -40px;
 }
 
 .certificate_button {
   display: inline-block;
   margin: 10px;
+  margin-bottom: 20px;
   padding: 1rem 3.5rem;
-  background-color: #0062B9;
+  background: linear-gradient(to right, #0f396f, #4d728f);
   border: none;
   color: #fff;
   text-decoration: none;
@@ -70,8 +64,10 @@
 .certificate_badge {
   display: inline-block;
   margin: 10px;
+  margin-bottom: 20px;
   padding: 1rem 4.5rem;
   background-color: #0062B9;
+  background: linear-gradient(to right, #0f396f, #4d728f);
   border: none;
   color: #fff;
   text-decoration: none;
@@ -79,10 +75,10 @@
   font-size: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-
 }
 
-.certificate_button:hover {
+.certificate_button:hover,
+.certificate_badge:hover {
   transform: translateY(-3px);
 }
 
@@ -100,117 +96,91 @@
 }
 
 .modal-content {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 2rem;
   border-radius: 5px;
   position: relative;
   text-align: center;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
   overflow: hidden;
+}
+
+.modal .certificate-title {
+   margin-top: -10px;
 }
 
 #close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 10px;
+  right: 10px;
   background: none;
-  color: #ffffff;
   border: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
-.carousel {
+.modal-image {
+  max-width: 100%;
+  max-height: 70vh;
+  margin-bottom: 1rem;
+}
+
+.c-container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
-  position: relative;
+  padding: 0 10px;
+  margin-top: 20px;
 }
 
-.carousel img {
-  max-width: 85%;
-  max-height: 90vh;
-}
-
-.arrow {
-  background: none;
-  font-size: 35px;
-  cursor: pointer;
+.certificate-card {
+  width: 300px;
+  height: auto;
+  background-color: #ffffff;
   padding: 10px;
-  color: #ffffff;
-  border-color: #ffffff;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1001;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease-in-out, transform 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
-.arrow.left {
-  left: 20px;
+.certificate-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
 }
 
-.arrow.right {
-  right: 20px;
+.card-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 5px;
 }
 
-.arrow[disabled] {
-  cursor: not-allowed;
-  color: #c1c0c0;
-  opacity: 0.5;
+.certificate-card .certificate-title {
+  text-align: left;
+  margin-top: 0px;
+  color: #3a3a3a;
+  font-size: large;
+}
+
+@media (max-width: 1024px) {
+  .certificate-card {
+    width: 250px;
+  }
 }
 
 @media (max-width: 768px) {
-  .certificates-component {
-    padding: 2rem;
-  }
-
-  .certificates-component button {
-    padding: 0.8rem 1.5rem;
-    font-size: 18px;
-  }
-
-  .modal-content {
-    padding: 1rem;
-  }
-
-  #close {
-    top: 5px;
-    right: 10px;
-    font-size: 25px;
-  }
-
-  .arrow {
-    font-size: 25px;
-    padding: 5px;
-  }
-
-  .arrow.left {
-    left: 10px;
-  }
-
-  .arrow.right {
-    right: 10px;
+  .certificate-card {
+    width: 250px;
+    max-width: 300px;
   }
 }
 
-@media (max-width: 580px){
-   .modal-content {
-     width: 85%;
-     height: auto;
-   }
-
-   .arrow {
-    font-size: 20px;
-    padding: 5px;
-  }
-
-  .arrow.left {
-    left: 2px;
-  }
-
-  .arrow.right {
-    right: 2px;
+@media (max-width: 580px) {
+  .certificate-card {
+    width: 300px;
+    max-width: 300px;
   }
 }
-

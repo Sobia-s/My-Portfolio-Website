@@ -14,70 +14,83 @@ import badge2 from './Badges/cisco.png';
 
 export function Certificate() {
   const certificates = [
-    { src: img1, alt: 'Meta Front-End Developer Certificate By Coursera' },
-    { src: img2, alt: 'JavaScript Essentials 1 By Cisco Networking Academy' },
-    { src: img3, alt: 'Build a Full Website using WordPress by Coursera' },
-    { src: img4, alt: 'Increase SEO Traffic with WordPress by Coursera' },
-    { src: img5, alt: 'Introduction to Microsoft Excel by Coursera' },
-    { src: img6, alt: 'Digital Literacy by DigiSkills Training Program' },
-    { src: img7, alt: 'Communication & Soft Skills by DigiSkills Training Program' },
-    { src: img8, alt: 'Freelancing by DigiSkills Training Program' },
-    { src: img9, alt: 'WordPress by DigiSkills Training Program' }
+    { id: 1, src: img1, alt: 'Meta Front-End Developer Professional Certificate By Coursera' },
+    { id: 2, src: img2, alt: 'JavaScript Essentials 1 By Cisco Networking Academy' },
+    { id: 3, src: img3, alt: 'Build a Full Website using WordPress by Coursera' },
+    { id: 4, src: img4, alt: 'Increase SEO Traffic with WordPress by Coursera' },
+    { id: 5, src: img5, alt: 'Introduction to Microsoft Excel by Coursera' },
+    { id: 6, src: img6, alt: 'Digital Literacy by DigiSkills Training Program' },
+    { id: 7, src: img7, alt: 'Communication & Soft Skills by DigiSkills Training Program' },
+    { id: 8, src: img8, alt: 'Freelancing by DigiSkills Training Program' },
+    { id: 9, src: img9, alt: 'WordPress by DigiSkills Training Program' }
   ];
 
   const badges = [
-    { src: badge1, alt: 'Meta Front-End Developer by Coursera' },
-    { src: badge2, alt: 'JavaScript Essentials 1 By Cisco Networking Academy' }
+    { id: 10, src: badge1, alt: 'Meta Front-End Developer by Coursera' },
+    { id: 11, src: badge2, alt: 'JavaScript Essentials 1 By Cisco Networking Academy' }
   ];
 
   const [activeTab, setActiveTab] = useState('certificates');
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [showModal, setShowModal] = useState(false);
-
-  const items = activeTab === 'certificates' ? certificates : badges;
-
-  const handleNext = () => {
-    if (currentIndex < items.length - 1) {
-      setCurrentIndex(currentIndex + 1);
-    }
-  };
-
-  const handlePrevious = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
-    }
-  };
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
-    setCurrentIndex(0);
-    setShowModal(true);
+    setSelectedItem(null);
+  };
+
+  const handleCardClick = (item) => {
+    setSelectedItem(item);
+  };
+
+  const closeModal = () => {
+    setSelectedItem(null);
   };
 
   return (
-    <>
+    <div className="certificate-container">
       <h1 id="certificate_heading">Certificates</h1>
       <hr className="certificate-underline" />
-      <div className="certificate-container">
-        <p>Displayed below are my earned certificates and badges.</p>
-        <button onClick={() => handleTabClick('certificates')} className="certificate_button">Certificates</button>
-        <button onClick={() => handleTabClick('badges')} className="certificate_badge">Badges</button>
+      <p>Presented below are my certifications and badges.</p>
+      <button onClick={() => handleTabClick('certificates')} className={`certificate_button ${activeTab === 'certificates' ? 'active' : ''}`}>
+        Certificates
+      </button>
+      <button onClick={() => handleTabClick('badges')} className={`certificate_badge ${activeTab === 'badges' ? 'active' : ''}`}>
+        Badges
+      </button>
 
-        {showModal && (
-          <div className="modal">
-            <div className="modal-content">
-              <div className="carousel">
-                <button className="arrow left" onClick={handlePrevious} disabled={currentIndex === 0}>&lt;</button>
-                <img src={items[currentIndex].src} alt={items[currentIndex].alt} />
-                <button className="arrow right" onClick={handleNext} disabled={currentIndex === items.length - 1}>&gt;</button>
-              </div>
+      <div className='c-container'>
+        {(activeTab === 'certificates' ? certificates : badges).map((item) => (
+          <div className='certificate-card' key={item.id} onClick={() => handleCardClick(item)}>
+            <img src={item.src} alt={item.alt} className='card-image' />
+            <div className='card-content'>
+              <p className='certificate-title'>{item.alt}</p>
             </div>
-            <button id="close" onClick={() => setShowModal(false)}>X</button>
           </div>
-        )}
+        ))}
       </div>
-    </>
+
+      {selectedItem && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button id="close" onClick={closeModal}>X</button>
+            <img src={selectedItem.src} alt={selectedItem.alt} className="modal-image" />
+            <p className="certificate-title">{selectedItem.alt}</p>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 
 export default Certificate;
+
+
+
+
+
+
+
+
+
+
+
