@@ -23,10 +23,9 @@ function About() {
             <span>CSS</span>
             <span>JavaScript</span>
             <span>React</span>
-            <span>WordPress</span>
-            <span>GitHub</span>
-            <span>JEST</span>
             <span>Responsive Design</span>
+            <span>GitHub</span>
+            <span>WordPress</span>
             <span>UI/UX</span>
             <span>Figma</span>
           </div>
