@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./project.css";
+import img from './images/luckyshrub.jpg';
 import img1 from "./images/capstone.jpg";
 import img2 from "./images/html.jpg";
 import img3 from "./images/react.jpg";
@@ -17,6 +18,13 @@ import img8 from './images/todo.jpg';
 
 function Projects() {
   const projects = [
+    {
+      title: "LuckyShrub Garden Firm Website",
+      image: img,
+      description:
+        "Developed a responsive e-commerce site with React, featuring product listings, cart management, and a functional checkout process.",
+      button: "https://lucky-shrub-garden-firm.netlify.app/",
+    },
     {
       title: "Capstone Project",
       image: img1,
@@ -66,7 +74,7 @@ function Projects() {
       image: img5,
       description:
         "A WordPress photography website with a stunning gallery, banner, and contact form.",
-      screenshots: [img5_1, img5_2, img5_3], // Define screenshots for WordPress projects
+      screenshots: [img5_1, img5_2, img5_3],
     }
   ];
 

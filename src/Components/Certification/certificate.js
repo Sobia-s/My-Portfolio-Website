@@ -9,8 +9,10 @@ import img6 from './images/img6.png';
 import img7 from './images/img7.png';
 import img8 from './images/img8.png';
 import img9 from './images/img9.png';
-import badge1 from './Badges/meta.png';
-import badge2 from './Badges/cisco.png';
+import badge1 from './Badges/techmakers.png';
+import badge2 from './Badges/developer.png';
+import badge3 from './Badges/meta.png';
+import badge4 from './Badges/cisco.png';
 
 export function Certificate() {
   const certificates = [
@@ -26,8 +28,10 @@ export function Certificate() {
   ];
 
   const badges = [
-    { id: 10, src: badge1, alt: 'Meta Front-End Developer by Coursera' },
-    { id: 11, src: badge2, alt: 'JavaScript Essentials 1 By Cisco Networking Academy' }
+    { id: 10, src: badge1, alt: `Member of Google's Women Techmakers` },
+    { id: 11, src: badge2, alt: 'Google Developer Program' },
+    { id: 12, src: badge3, alt: 'Meta Front-End Developer by Coursera' },
+    { id: 13, src: badge4, alt: 'JavaScript Essentials 1 By Cisco Networking Academy' }
   ];
 
   const [activeTab, setActiveTab] = useState('certificates');
