@@ -9,7 +9,7 @@ export default function Banner() {
             <div className='banner-container'>
                 <div className='banner-text'>
                     <h2 className='heading'>HELLO! I'M SOBIA SOOMRO</h2>
-                    <p className='banner-para'>Certified Front-End Developer | Passionate about Creating Outstanding User Experiences</p>
+                    <p className='banner-para'>Specialized Front-End Developer | Passionate about Creating Outstanding User Experiences</p>
                 </div>
                 <div className='button-container'>
                     <Link to="/projects">
