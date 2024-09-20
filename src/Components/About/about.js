@@ -10,7 +10,7 @@ function About() {
         <div className="aboutMe">
           <h3>Get to know me!</h3>
           <p>
-            My name is Sobia, and I am certified in creating user-friendly and visually appealing web interfaces. Through extensive coursework and practical projects, I have developed a strong proficiency in building responsive and engaging web applications that prioritize excellent user experiences.
+            My name is Sobia, and I am certified and passionate in creating user-friendly and visually appealing web interfaces. Through extensive coursework and practical projects, I have developed a strong proficiency in building responsive and engaging web applications that prioritize excellent user experiences.
           </p>
           <p>
           I am eager to continuously learn and explore emerging technologies. I am seeking an entry-level position to contribute to a dynamic team and refine my development skills.
