@@ -19,7 +19,7 @@ export default function Banner() {
                 <div className='banner-icons'>
                     <a href="https://github.com/Sobia-s" target="_blank" rel="noopener noreferrer" className='icons'><FaGithub /></a>
                     <a href="https://www.linkedin.com/in/sobiasoomro/" target='_blank' rel='noopener noreferrer' className='icons'><FaLinkedin /></a>
-                    <a href="https://g.dev/WomenTechMaker" target='_blank' rel='noopener noreferrer' className='icons'><FaGlobe /></a> {/* Add the Globe icon */}
+                    <a href="https://g.dev/sobiasoomro" target='_blank' rel='noopener noreferrer' className='icons'><FaGlobe /></a> {/* Add the Globe icon */}
                 </div>
             </div>
         </>
