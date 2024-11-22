@@ -217,7 +217,7 @@
         font-size: 1.5rem;
     }
     .social-icons{
-        margin-left: 55px;
+        margin-left: 60px;
     }
     .social-icons .icon {
         width: 35px;
@@ -228,6 +228,9 @@
 @media (max-width:450px){
    .banner-content{
      margin-top: 2px;
+   }
+   .social-icons{
+    margin-left: 60px;
    }
 }
 
@@ -240,6 +243,9 @@
     }
     .banner-para{
         font-size: 1.1rem;
+    }
+    .social-icons{
+        margin-left: 55px;
     }
     .social-icons a .icon{
         margin-left: -12px;
