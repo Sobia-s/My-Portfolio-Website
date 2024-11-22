@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaGlobe, FaEnvelope } from 'react-icons/fa';
 import img from './banner.png';
 import './banner1.css';
@@ -57,41 +57,41 @@ export default function Banner() {
                     </div>
                 </div>
                 <div className="projects-container">
-                    <Link to={{ pathname: "https://lucky-shrub-garden-firm.netlify.app/" }} target="_blank" className="project-link">
-                        <div className="cards">
-                            <img src={img1} alt="E-Commerce Website project" className="card-img" />
-                            <div className="card-content">
-                                <h3 className="project-title">E-Commerce Website</h3>
-                                <p className="project-description">
-                                    A fully functional E-Commerce platform built with React, showcasing a stunning design and a fully integrated checkout process.
-                                </p>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to={{ pathname: "https://my-capstone.netlify.app/" }} target="_blank" className="project-link">
-                        <div className="cards">
-                            <img src={img2} alt="Restaurant website project" className="card-img" />
-                            <div className="card-content">
-                                <h3 className="project-title">Restaurant Website</h3>
-                                <p className="project-description">
-                                    A responsive React-based platform for table reservations, featuring dynamic booking and an appealing, user-friendly layout.
-                                </p>
-                            </div>
-                        </div>
-                    </Link>
-                    <Link to={{ pathname: "https://myreact-projects.netlify.app/" }} target="_blank" className="project-link">
-                        <div className="cards">
-                            <img src={img3} alt="Portfolio website project" className="card-img" />
-                            <div className="card-content">
-                                <h3 className="project-title">Portfolio Website</h3>
-                                <p className="project-description">
-                                    A modern React-based portfolio featuring functional form submission, a stunning responsive design, and intuitive navigation.
-                                </p>
-                            </div>
-                        </div>
-                    </Link>
-                </div>
-            </section>
+              <a href="https://lucky-shrub-garden-firm.netlify.app/" target="_blank" rel="noopener noreferrer" className="project-link">
+              <div className="cards">
+              <img src={img1} alt="E-Commerce Website project" className="card-img" />
+               <div className="card-content">
+                <h3 className="project-title">E-Commerce Website</h3>
+                <p className="project-description">
+                    A fully functional E-Commerce platform built with React, showcasing a stunning design and an integrated checkout process
+                </p>
+               </div>
+              </div>
+            </a>
+            <a href="https://my-capstone.netlify.app/" target="_blank" rel="noopener noreferrer" className="project-link">
+             <div className="cards">
+              <img src={img2} alt="Restaurant website project" className="card-img" />
+               <div className="card-content">
+                  <h3 className="project-title">Restaurant Website</h3>
+                <p className="project-description">
+                    A responsive React-based platform for table reservations, featuring dynamic booking and an appealing, user-friendly layout
+                </p>
+            </div>
+           </div>
+         </a>
+        <a href="https://myreact-projects.netlify.app/" target="_blank" rel="noopener noreferrer" className="project-link">
+           <div className="cards">
+             <img src={img3} alt="Portfolio website project" className="card-img" />
+              <div className="card-content">
+                 <h3 className="project-title">Portfolio Website</h3>
+                <p className="project-description">
+                    A modern React-based portfolio featuring functional form submission, a stunning responsive design, and intuitive navigation
+                </p>
+            </div>
+          </div>
+        </a>
+        </div>
+    </section>
         </>
     );
 }
