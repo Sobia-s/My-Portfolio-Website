@@ -50,7 +50,7 @@ function Contact() {
         Feel free to reach out to me via social platforms or email me anytime
       </p>
       <div className="contact-social-icons">
-      <a href="https://www.linkedin.com/in/sobiasoomro/" target="_blank" rel="noopener noreferrer" className="social-item">
+      <a href="https://www.linkedin.com/in/sobiasoomro/" target="_blank" rel="noreferrer" className="social-item">
           <span className="social-icon linkedin-icon"><FaLinkedin /></span>
           <span className="social-label">LinkedIn</span>
         </a>
