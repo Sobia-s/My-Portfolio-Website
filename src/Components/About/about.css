@@ -1,99 +1,150 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
 }
+
 .container {
     width: 100%;
-    padding: 3px;
-    margin: 10px auto;
-}
-
-.title {
-    text-align: center;
-    margin-top: 78px;
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #0e315f;
-}
-
-.container .title-underline {
-    width: 27px;
-    height: 4px;
-    border-radius: 2px;
-    border: 0;
-    background: linear-gradient(to right, #0f396f, #4d728f);;
-    margin: 0 auto;
-    margin-bottom: 55px;
-    margin-top: 10px;
+    background-color: #faf3f3;
+    padding: 40px 20px;
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 7rem;
-    justify-content: center;
-    text-align: left;
+    max-width: 80%;
     margin: auto;
-    max-width: 120rem;
-    width: 92%;
+    text-align: center;
+    padding: 15px;
 }
 
-.aboutMe h3, .skills h3 {
-    font-size: 1.5rem;
-    color: #0e315f;
-    margin-bottom: 20px;
+.about-title {
+    font-family: Aboreto, serif;
+    color: #2f3834;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    font-weight: 350;
 }
 
-.aboutMe p {
+.about-para {
     font-size: 1.2rem;
-    line-height: 1.6;
-    letter-spacing: 0.3px;
-    word-spacing: 4px;
-    color: #2d2c2c;
-    margin-bottom: 10px;
-    margin-top: -5px;
-    text-align: left;
+    letter-spacing: 0.5px;
+    line-height: 1.7;
+    margin: 15px 0 40px;
+    color: #4a4a4b;
 }
 
-.Slist {
+.skills {
+    max-width: 80%;
+    margin: auto;
+}
+
+.skill-heading {
+    font-family: Aboreto, serif;
+    color: #2f3834;
+    letter-spacing: 1px;
+    font-size: 2.3rem;
+    font-weight: 350;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skills-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-    width: 90%;
+    gap: 20px;
+    padding: 0 10px;
 }
 
-.Slist span {
-    padding: 8px 17px;
-    margin-bottom: 1.5rem;
-    margin-right: 1rem;
-    font-size: 1.1rem;
-    background: rgba(153,153,153,0.2);
+.skill-box {
+    background: linear-gradient(to bottom, #eee5e3, #e7dad3);
+    color: #4a4a4b;
+    width: 105px;
+    height: 90px;
     border-radius: 5px;
-    font-weight: 600;
-    color: #636262;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+    font-weight: 550;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+    position: relative;
 }
 
-@media (max-width: 800px) {
-    .content {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .aboutMe, .skills {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1), 0 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
-@media (max-width: 650px){
-    .Slist {
-        gap: 3px;
+.skill-box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
+    transform: scale(0);
+    transition: transform 0.6s ease;
+}
+
+.skill-box:hover:before {
+    transform: scale(1);
+}
+
+@media (max-width: 768px) {
+    .content{
+        margin-top: -30px;
+    }
+    .about-title{
+        font-size: 2.1rem;
+    }
+    .about-para {
+        font-size: 1rem;
+    }
+    .skill-heading {
+        font-size: 2.1rem;
+    }
+    .skills-container {
+        gap: 15px;
+    }
+    .skill-box {
+        width: 100px;
+        height: 80px;
+        font-size: 1rem;
+    }
+    .skills {
+        margin-top: -20px;
     }
 }
 
+@media (max-width: 600px) {
+    .content{
+        margin-top: 5px;
+    }
+    .content, .skills {
+        max-width: 100%;
+        text-align: center;
+    }
 
+    .skills-container {
+        justify-content: center;
+    }
+}
+@media(max-width: 450px) {
+    .content{
+        margin-top: -35px;
+    }
+    .about-title{
+        font-size: 1.8rem;
+    }
+    .about-para{
+        font-size: 1rem;
+    }
+    .skill-heading{
+        font-size: 1.8rem;
+    }
+}

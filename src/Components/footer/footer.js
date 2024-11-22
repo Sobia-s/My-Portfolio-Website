@@ -1,35 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './footer.css';
-import { FaGithub, FaLinkedin, FaGlobe } from 'react-icons/fa';
 
 export function Footer() {
+
+    const scrollToTop = () => {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+
     return (
         <footer className="footer">
             <div className="footer-content">
-                 <div className="footer-left">
-                     <h3 id="footer-name">SOBIA SOOMRO</h3>
-                     <p className="footer-para">Certified Front-End Developer | Passionate about Creating Outstanding User Experiences</p>
-                 </div>
-                 <div className="footer-right">
-                     <h3 id="footer-socials">SOCIAL</h3>
-                     <div className="social-icons">
-                     <a href="https://github.com/Sobia-s" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                     <a href="https://www.linkedin.com/in/sobiasoomro/" target='_blank' rel='noopener noreferrer'><FaLinkedin /></a>
-                     <a href="https://g.dev/WomenTechMaker" target='_blank' rel='noopener noreferrer'><FaGlobe /></a>
-                 </div>
-                 </div>
-             </div>
-             <div className="footer-bottom">
-                 <p>© Copyright {new Date().getFullYear()}. Made by <a href="https://sobia-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Sobia Soomro</a></p>
-             </div>
-         </footer>
+                <div className="footer-left">
+                 <span>© {new Date().getFullYear()}</span>
+                    <a href="https://sobia-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer" className="footer-name">
+                        SOBIA SOOMRO
+                    </a>
+                </div>
+                <div className="footer-right">
+                    <Link to="/about" className="page-link" onClick={scrollToTop}>About</Link>
+                    <Link to="/projects" className='page-link'onClick={scrollToTop}>Portfolio</Link>
+                    <Link to="/certificates" className='page-link' onClick={scrollToTop}>Certifications</Link>
+                    <Link to="/contact" className='page-link' onClick={scrollToTop}>Contact</Link>
+                </div>
+            </div>
+        </footer>
     );
 }
-
-
-
-
-
-
-
-

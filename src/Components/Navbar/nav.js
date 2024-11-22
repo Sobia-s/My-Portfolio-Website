@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from './logo.png';
+import logo from './img.png';
 import "./nav.css";
 
 export function Nav() {
@@ -40,14 +40,17 @@ export function Nav() {
                 <div className={`bar ${isOpen ? "open" : ""}`}></div>
                 <div className={`bar ${isOpen ? "open" : ""}`}></div>
             </div>
-            <img src={logo} alt="Logo" width={60} height={60} className="logo-img"/>
+            <Link to="/" onClick={closeMenu}>
+                <img src={logo} alt="Logo" width={130} height={90} className="logo-img" />
+            </Link>
             <ul className={`nav-items ${isOpen ? "open" : ""}`}>
-                <li><Link to="/" onClick={closeMenu}>HOME</Link></li>
-                <li><Link to="/about" onClick={closeMenu}>ABOUT</Link></li>
-                <li><Link to="/projects" onClick={closeMenu}>PROJECTS</Link></li>
-                <li><Link to="/certificates" onClick={closeMenu}>CERTIFICATES</Link></li>
-                <li><Link to="/contact" onClick={closeMenu}>CONTACT</Link></li>
+                <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+                <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+                <li><Link to="/projects" onClick={closeMenu}>Portfolio</Link></li>
+                <li><Link to="/certificates" onClick={closeMenu}>Certificates</Link></li>
+                <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
             </ul>
         </nav>
     );
 }
+

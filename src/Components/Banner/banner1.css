@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d2c8ac;
+    padding: 20px;
+    height: auto;
+    min-height: 60vh;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    gap: 5rem;
+    text-align: center;
+
+}
+
+.banner-image {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-image img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.banner-intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 15px;
+    text-align: left;
+}
+
+.banner-intro-text #banner-heading,
+.banner-intro-text .banner-name,
+.banner-intro-text .banner-para {
+    font-family: Aboreto, serif;
+    color: #2f3834;
+    letter-spacing: 1px;
+}
+
+#banner-heading {
+    font-size: 2.7rem;
+    font-weight: 350;
+}
+
+.banner-name {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.banner-para {
+    font-size: 1.8rem;
+    font-weight: 540;
+    letter-spacing: 1.5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.social-icons a .icon {
+    padding: 8px;
+    color: #2f3834;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s ease;
+    height: 50px;
+    width: 50px;
+    margin-top: -7px;
+}
+.social-icons{
+    position: relative;
+}
+
+.icon-label {
+    display: block;
+    position: absolute;
+    bottom: -28px;
+    font-style: italic;
+    margin-left: 20px;
+    transform: translateX(-50%) translateY(10px);
+    font-size: 14px;
+    color: #a04d66;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    width: 30px;
+    height: 25px;
+}
+
+.social-icons a:hover .icon-label {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner-container {
+        min-height: 28vh;
+        padding: 10px;
+    }
+    .banner-content{
+        gap: 3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner-content {
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    #banner-heading {
+        font-size: 2.7rem;
+    }
+    .banner-name {
+        font-size: 2.7rem;
+    }
+    .banner-para {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner-image img {
+        max-width: 400px;
+    }
+
+    #banner-heading {
+        font-size: 2.3rem;
+    }
+    .banner-name {
+        font-size: 2.3rem;
+    }
+    .banner-para {
+        font-size: 1.5rem;
+    }
+    .social-icons a .icon{
+        padding: 9px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-content{
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-intro-text{
+        text-align: center;
+    }
+    #banner-heading {
+        font-size: 2.5rem;
+    }
+    .banner-name {
+        font-size: 2.5rem;
+    }
+    .banner-para {
+        font-size: 1.8rem;
+    }
+    .social-icons{
+        margin-left: 80px;
+    }
+    .social-icons a .icon {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding: 6px;
+    }
+}
+@media(max-width:600px) {
+    .banner-content{
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-image img{
+        width: 390px;
+    }
+
+    .banner-content {
+        gap: 1.5rem;
+    }
+
+    .banner-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #banner-heading {
+        font-size: 2.1rem;
+    }
+    .banner-name {
+        font-size: 2.1rem;
+    }
+    .banner-para {
+        font-size: 1.5rem;
+    }
+    .social-icons{
+        margin-left: 55px;
+    }
+    .social-icons .icon {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+}
+@media (max-width:450px){
+   .banner-content{
+     margin-top: 2px;
+   }
+}
+
+@media(max-width: 350px){
+    #banner-heading{
+        font-size: 1.7rem;
+    }
+    .banner-name{
+        font-size: 1.7rem;
+    }
+    .banner-para{
+        font-size: 1.1rem;
+    }
+    .social-icons a .icon{
+        margin-left: -12px;
+    }
+}
+

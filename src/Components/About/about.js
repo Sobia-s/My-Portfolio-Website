@@ -1,40 +1,37 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import './about.css';
 
 function About() {
+   const location = useLocation();
+
+  useEffect(() => {
+    document.title = "About Sobia Soomro | Frontend Developer";
+  }, [location]);
   return (
     <div className="container">
-      <h2 className="title">About Me</h2>
-      <hr className="title-underline"/>
       <div className="content">
-        <div className="aboutMe">
-          <h3>Get to know me!</h3>
-          <p>
-            My name is Sobia, and I am certified and passionate in creating user-friendly and visually appealing web interfaces. Through extensive coursework and practical projects, I have developed a strong proficiency in building responsive and engaging web applications that prioritize excellent user experiences.
-          </p>
-          <p>
-          I am eager to continuously learn and explore emerging technologies. I am seeking an entry-level position to contribute to a dynamic team and refine my development skills.
+        <h1 className="about-title">About Me</h1>
+          <p className="about-para">
+          I'm Sobia, a Front-End Developer specializing in developing intuitive, visually engaging websites that offer seamless user experiences. I transform designs into optimized, user-centric sites, with projects that showcase my abilities—including this portfolio, a visually compelling e-commerce site, an interactive restaurant site, and more. With strong proficiency in creating responsive websites, I prioritize delivering exceptional user experiences and am eager to collaborate with innovative teams and professionals to create impactful, user-centered solutions.
           </p>
         </div>
         <div className="skills">
-          <h3>My Skills</h3>
-          <div className="Slist">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Responsive Design</span>
-            <span>GitHub</span>
-            <span>WordPress</span>
-            <span>UI/UX</span>
-            <span>Figma</span>
-          </div>
+          <h1 className="skill-heading">My Expertise</h1>
+          <div className="skills-container">
+          <div className="skill-box">ReactJS</div>
+          <div className="skill-box">JavaScript</div>
+          <div className="skill-box">HTML</div>
+          <div className="skill-box">CSS</div>
+          <div className="skill-box">GitHub</div>
+          <div className="skill-box">UI/UX</div>
+          <div className="skill-box">WordPress</div>
+          <div className="skill-box">Figma</div>
         </div>
-      </div>
-    </div>
-  );
+       </div>
+       </div>
+);
 }
-
-
 
 export default About;

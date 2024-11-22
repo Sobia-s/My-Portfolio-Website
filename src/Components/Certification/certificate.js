@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import './certificate.css';
 import img1 from './images/img1.png';
 import img2 from './images/img2.png';
@@ -9,14 +11,15 @@ import img6 from './images/img6.png';
 import img7 from './images/img7.png';
 import img8 from './images/img8.png';
 import img9 from './images/img9.png';
-import badge1 from './Badges/meta.png';
-import badge2 from './Badges/quiz.png';
-import badge3 from './Badges/html.png';
-import badge4 from './Badges/techmakers.png';
-import badge5 from './Badges/developer.png';
-import badge6 from './Badges/cisco.png';
+import img10 from './images/img10.png';
 
 export function Certificate() {
+  const location = useLocation();
+
+  useEffect(() => {
+    document.title = "Certificates of Sobia Soomro | Frontend Developer";
+  }, [location]);
+
   const certificates = [
     { id: 1, src: img1, alt: 'Meta Front-End Developer Professional Certificate By Coursera' },
     { id: 2, src: img2, alt: 'JavaScript Essentials 1 By Cisco Networking Academy' },
@@ -26,25 +29,11 @@ export function Certificate() {
     { id: 6, src: img6, alt: 'Digital Literacy by DigiSkills Training Program' },
     { id: 7, src: img7, alt: 'Communication & Soft Skills by DigiSkills Training Program' },
     { id: 8, src: img8, alt: 'Freelancing by DigiSkills Training Program' },
-    { id: 9, src: img9, alt: 'WordPress by DigiSkills Training Program' }
+    { id: 9, src: img9, alt: 'WordPress by DigiSkills Training Program' },
+    { id: 10, src: img10, alt: 'Certification of Appreciation from Women Tech Network' },
   ];
 
-  const badges = [
-    { id: 10, src: badge1, alt: 'Meta Front-End Developer Certificate (Coursera)' },
-    { id: 11, src: badge2, alt: `First Learning Pathway and quiz badge` },
-    { id: 12, src: badge3, alt: 'Google Developers HTML Course' },
-    { id: 13, src: badge4, alt: `Women Techmakers Member` },
-    { id: 14, src: badge5, alt: 'Google Developer Program Participant' },
-    { id: 15, src: badge6, alt: 'Cisco JavaScript Essentials 1 Badge' },
-  ];
-
-  const [activeTab, setActiveTab] = useState('certificates');
   const [selectedItem, setSelectedItem] = useState(null);
-
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
-    setSelectedItem(null);
-  };
 
   const handleCardClick = (item) => {
     setSelectedItem(item);
@@ -55,50 +44,43 @@ export function Certificate() {
   };
 
   return (
-    <div className="certificate-container">
-      <h1 id="certificate_heading">Certificates</h1>
-      <hr className="certificate-underline" />
-      <p>Presented below are my certifications and badges.</p>
-      <button onClick={() => handleTabClick('certificates')} className={`certificate_button ${activeTab === 'certificates' ? 'active' : ''}`}>
-        Certificates
-      </button>
-      <button onClick={() => handleTabClick('badges')} className={`certificate_badge ${activeTab === 'badges' ? 'active' : ''}`}>
-        Badges
-      </button>
+    <div className="certificate-main-container">
+      <div className="certificate-inner-container">
+        <div className="certificate-content">
+          <h1 id="certificate_heading">Professional Qualifications</h1>
+          <p className="certificate-para">
+             These certifications highlight my front-end expertise, dedication, and commitment to continuous growth
+          </p>
+        </div>
+        <div className="certificate-container">
+          {certificates.map((item) => (
+            <div
+              className="certificate-card"
+              key={item.id}
+              onClick={() => handleCardClick(item)}
+            >
+              <img src={item.src} alt={item.alt} className="card-image" />
+            </div>
+          ))}
+        </div>
 
-      <div className='c-container'>
-        {(activeTab === 'certificates' ? certificates : badges).map((item) => (
-          <div className='certificate-card' key={item.id} onClick={() => handleCardClick(item)}>
-            <img src={item.src} alt={item.alt} className='card-image' />
-            <div className='card-content'>
-              <p className='certificate-title'>{item.alt}</p>
+        {selectedItem && (
+          <div className="modal" onClick={closeModal}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <button id="close" onClick={closeModal}>
+                X
+              </button>
+              <img
+                src={selectedItem.src}
+                alt={selectedItem.alt}
+                className="modal-image"
+              />
             </div>
           </div>
-        ))}
+        )}
       </div>
-
-      {selectedItem && (
-        <div className="modal" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button id="close" onClick={closeModal}>X</button>
-            <img src={selectedItem.src} alt={selectedItem.alt} className="modal-image" />
-            <p className="certificate-title">{selectedItem.alt}</p>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
 
 export default Certificate;
-
-
-
-
-
-
-
-
-
-
-
