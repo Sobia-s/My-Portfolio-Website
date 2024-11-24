@@ -51,8 +51,8 @@ export default function Banner() {
                         <div className="line"></div>
                     </div>
                 </div>
-                <div className="projects-container">
-              <a href="https://lucky-shrub-garden-firm.netlify.app/" target="_blank" rel="noopener noreferrer" className="project-link">
+              <div className="projects-container">
+               <a href="https://lucky-shrub-garden-firm.netlify.app/" target="_blank" rel="noopener noreferrer" className="project-link">
               <div className="cards">
               <img src={img1} alt="E-Commerce Website project" className="card-img" />
                <div className="card-content">
@@ -62,7 +62,7 @@ export default function Banner() {
                  </p>
                </div>
               </div>
-            </a>
+             </a>
             <a href="https://my-capstone.netlify.app/" target="_blank" rel="noopener noreferrer" className="project-link">
              <div className="cards">
               <img src={img2} alt="Restaurant website project" className="card-img" />
