@@ -169,6 +169,9 @@
   .certificate-content{
     margin-top: -10px;
   }
+  #certificate_heading{
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -179,7 +182,7 @@
   }
 
   #certificate_heading {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .certificate-para {

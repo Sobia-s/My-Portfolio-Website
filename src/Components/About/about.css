@@ -160,29 +160,26 @@
     .content {
         margin-top: -30px;
     }
-
     .about-title {
         font-size: 2.1rem;
     }
-
     .about-para {
         font-size: 1rem;
     }
-
     .skill-heading {
         font-size: 2.1rem;
     }
-
+    .badge-heading{
+        font-size: 2.1rem;
+    }
     .skills-container {
         gap: 15px;
     }
-
     .skill-box {
         width: 100px;
         height: 80px;
         font-size: 1rem;
     }
-
     .skills {
         margin-top: -20px;
     }
@@ -192,18 +189,15 @@
     .content {
         margin-top: 5px;
     }
-
     .content, .skills {
         max-width: 100%;
         text-align: center;
     }
-
     .skills-container {
         justify-content: center;
     }
-
     .badge-card {
-        flex: 1 1 100%; /* Single card per row after 730px */
+        flex: 1 1 100%;
     }
 }
 
@@ -211,19 +205,18 @@
     .content {
         margin-top: -35px;
     }
-
     .about-title {
         font-size: 1.8rem;
     }
-
     .about-para {
         font-size: 1rem;
     }
-
     .skill-heading {
         font-size: 1.8rem;
     }
-
+    .badge-heading{
+        font-size: 1.8rem;
+    }
     .badge-card {
         height: 180px;
     }
