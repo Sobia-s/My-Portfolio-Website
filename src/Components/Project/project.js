@@ -29,7 +29,7 @@ function Projects() {
     {
       image: img,
       title: "E-Commerce Website",
-      description: "A fully functional E-Commerce platform built with React, showcasing a stunning design and a fully integrated checkout process with layut layout layout layout",
+      description: "A fully functional E-Commerce platform built with React, showcasing a stunning design and a fully integrated checkout process",
       button: "https://lucky-shrub-garden-firm.netlify.app/",
     },
     {
