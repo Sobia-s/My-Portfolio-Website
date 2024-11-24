@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .banner-content #banner-heading,
@@ -37,12 +37,12 @@ body {
 }
 
 #banner-heading {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 350;
 }
 
 .banner-para {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     letter-spacing: 1px;
     line-height: 2.6rem;
     color: #2f3834;
@@ -55,7 +55,7 @@ body {
     font-size: 1.2rem;
     border: none;
     border-radius: 5px;
-    margin-top: 7px;
+    margin-top: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-decoration: none;
@@ -68,8 +68,8 @@ body {
 
 .social-icons {
     display: flex;
-    gap: 14px;
-    margin-top: 20px;
+    gap: 15px;
+    margin-top: 10px;
     position: relative;
 }
 
@@ -109,17 +109,25 @@ body {
     transform: translateX(-50%) translateY(-5px);
 }
 
+@media (max-width:1024px) {
+    .banner-container{
+        min-height: 40vh;
+    }
+}
 @media (max-width: 768px) {
+    .banner-container{
+        min-height: 40vh;
+    }
     .banner-content {
         max-width: 90%;
     }
 
     #banner-heading {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
     }
 
     .banner-para {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         line-height: 2rem;
     }
 
@@ -141,6 +149,7 @@ body {
 @media (max-width: 480px) {
     .banner-container {
         padding: 10px;
+        min-height: 40vh;
     }
     #banner-heading {
         font-size: 2.1rem;
