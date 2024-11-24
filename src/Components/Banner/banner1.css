@@ -140,32 +140,29 @@ body {
 
 @media (max-width: 480px) {
     .banner-container {
-        padding: 15px;
+        padding: 10px;
     }
-
     #banner-heading {
         font-size: 2.1rem;
+        margin-bottom: 4px;
     }
-
     .banner-para {
         font-size: 1.3rem;
         line-height: 1.8rem;
+        margin-bottom: 4px;
     }
-
     .skills-btn {
         font-size: 0.9rem;
         padding: 8px 20px;
+        margin-bottom: 4px;
     }
-
     .social-icons {
         flex-direction: row;
         gap: 12px;
     }
-
     .icon {
         font-size: 1.2rem;
     }
-
     .icon-label {
         font-size: 10px;
         margin-left: 2rem;

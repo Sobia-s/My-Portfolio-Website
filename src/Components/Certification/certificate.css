@@ -181,10 +181,6 @@
     flex-wrap: wrap;
   }
 
-  #certificate_heading {
-    font-size: 1.3rem;
-  }
-
   .certificate-para {
     font-size: 0.9rem;
     line-height: 1.8;

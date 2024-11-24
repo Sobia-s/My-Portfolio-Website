@@ -89,32 +89,32 @@
     color: #8b3a52;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .footer-container {
         width: 90%;
     }
-
     .footer-icons {
         gap: 10px;
     }
-
     .footer-last-container {
         font-size: 0.9rem;
     }
-
     .footer-image {
-        max-width: 8rem; /* Slightly smaller on smaller screens */
+        max-width: 8rem;
     }
 }
 
 @media (max-width: 550px) {
+    .footer-image{
+        margin-top: -40px;
+        height: 8rem;
+    }
     .links-container {
         flex-direction: column;
-        gap: 10px;
+        gap: 17px;
+        margin-top: -3px;
     }
-
     .page-link {
-        font-size: 1rem; /* Smaller links for mobile */
+        font-size: 1.1rem;
     }
 }
