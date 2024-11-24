@@ -56,7 +56,7 @@ function About() {
        </div>
        <div className='badges'>
         <div className='badges-conatiner'>
-          <h1 className="skill-heading">My Achievements</h1>
+          <h1 className="badge-heading">My Achievements</h1>
           <div className="badge-card-container">
           {badges.map((item) => (
             <div

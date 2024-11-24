@@ -48,6 +48,15 @@
     text-align: center;
 }
 
+.badge-heading{
+    font-family: Aboreto, serif;
+    color: #2f3834;
+    letter-spacing: 1px;
+    font-size: 2.3rem;
+    font-weight: 350;
+    margin-bottom: 30px;
+    text-align: center;
+}
 .skills-container {
     display: flex;
     justify-content: center;
@@ -94,6 +103,10 @@
 
 .skill-box:hover:before {
     transform: scale(1);
+}
+
+.badges{
+    margin-top: 65px;
 }
 
 .badge-card-container {
@@ -212,6 +225,6 @@
     }
 
     .badge-card {
-        height: 180px; /* Reduced height for small screens */
+        height: 180px;
     }
 }

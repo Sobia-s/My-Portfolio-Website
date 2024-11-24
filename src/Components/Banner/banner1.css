@@ -144,26 +144,26 @@ body {
     }
 
     #banner-heading {
-        font-size: 1.8rem;
+        font-size: 2.1rem;
     }
 
     .banner-para {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         line-height: 1.8rem;
     }
 
     .skills-btn {
-        font-size: 0.8rem;
-        padding: 6px 15px;
+        font-size: 0.9rem;
+        padding: 8px 20px;
     }
 
     .social-icons {
         flex-direction: row;
-        gap: 10px;
+        gap: 12px;
     }
 
     .icon {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .icon-label {
