@@ -65,7 +65,6 @@
   border-radius: 5px;
   transition: box-shadow 0.2s ease-in-out, transform 0.3s ease;
   border: 1px solid #c8c5c5;
-  color: #393d40;
   overflow: hidden;
   cursor: pointer;
   padding: 20px 8px;

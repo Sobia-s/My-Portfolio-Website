@@ -98,7 +98,7 @@ function Contact() {
         />
         {status === 'SUCCESS' && <p className='submitting-message'>Thank you for reaching out to me! Your email has been successfully sent, and I will get back to you as soon as possible</p>}
         {status === 'ERROR' && <p className='error-message'>Submission failed. Please try again or contact me directly at sobiasoomro97@gmail.com</p>}
-        <button type="submit" id="submit_btn">Send Email</button>
+        <button type="submit" className="submit_btn">Send Email</button>
       </form>
     </div>
   </div>

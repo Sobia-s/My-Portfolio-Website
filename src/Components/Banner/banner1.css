@@ -1,7 +1,11 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
 }
 
 .banner-container {
@@ -9,92 +13,86 @@
     align-items: center;
     justify-content: center;
     background-color: #d2c8ac;
-    padding: 20px;
-    height: auto;
     min-height: 60vh;
+    padding: 20px;
+    text-align: center;
 }
 
 .banner-content {
+    max-width: 75%;
+    width: 100%;
+    gap: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 1000px;
-    width: 100%;
-    gap: 5rem;
-    text-align: center;
-
+    margin-bottom: 20px;
 }
 
-.banner-image {
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.banner-image img {
-    width: 100%;
-    max-width: 480px;
-    height: auto;
-    border-radius: 20px;
-}
-
-.banner-intro-text {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    gap: 15px;
-    text-align: left;
-}
-
-.banner-intro-text #banner-heading,
-.banner-intro-text .banner-name,
-.banner-intro-text .banner-para {
+.banner-content #banner-heading,
+.banner-content .banner-subheading,
+.banner-content .banner-para {
     font-family: Aboreto, serif;
     color: #2f3834;
     letter-spacing: 1px;
 }
 
 #banner-heading {
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     font-weight: 350;
 }
 
-.banner-name {
-    font-size: 2.5rem;
-    font-weight: 600;
+.banner-para {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    line-height: 2.6rem;
+    color: #2f3834;
 }
 
-.banner-para {
-    font-size: 1.8rem;
-    font-weight: 540;
-    letter-spacing: 1.5px;
+.skills-btn {
+    background-color:  #a04d66;
+    color: #ffffff;
+    padding: 11px 35px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.skills-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .social-icons {
     display: flex;
-    gap: 8px;
-    margin-top: 10px;
+    gap: 14px;
+    margin-top: 20px;
+    position: relative;
 }
 
-.social-icons a .icon {
-    padding: 8px;
-    color: #2f3834;
+.social-icons a {
+    text-decoration: none;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    transition: color 0.3s ease;
-    height: 50px;
-    width: 50px;
-    margin-top: -7px;
-}
-.social-icons{
+    justify-content: center;
     position: relative;
+    font-size: 1rem;
+    color: #2f3834;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon {
+    font-size: 1.6rem;
 }
 
 .icon-label {
     display: block;
     position: absolute;
-    bottom: -28px;
+    bottom: -36px;
     font-style: italic;
     margin-left: 20px;
     transform: translateX(-50%) translateY(10px);
@@ -111,144 +109,67 @@
     transform: translateX(-50%) translateY(-5px);
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .banner-container {
-        min-height: 28vh;
-        padding: 10px;
-    }
-    .banner-content{
-        gap: 3rem;
-    }
-}
-
-@media (min-width: 768px) {
-    .banner-content {
-        flex-direction: row;
-        text-align: center;
-        justify-content: center;
-        gap: 1.5rem;
-    }
-    #banner-heading {
-        font-size: 2.7rem;
-    }
-    .banner-name {
-        font-size: 2.7rem;
-    }
-    .banner-para {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    .banner-image img {
-        max-width: 400px;
-    }
-
-    #banner-heading {
-        font-size: 2.3rem;
-    }
-    .banner-name {
-        font-size: 2.3rem;
-    }
-    .banner-para {
-        font-size: 1.5rem;
-    }
-    .social-icons a .icon{
-        padding: 9px;
-        margin-top: -10px;
-    }
-}
-
 @media (max-width: 768px) {
-    .banner-content{
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
+    .banner-content {
+        max-width: 90%;
     }
-    .banner-intro-text{
-        text-align: center;
-    }
+
     #banner-heading {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
-    .banner-name {
-        font-size: 2.5rem;
-    }
+
     .banner-para {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
     }
-    .social-icons{
-        margin-left: 80px;
+
+    .skills-btn {
+        font-size: 0.9rem;
+        padding: 8px 20px;
     }
-    .social-icons a .icon {
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        padding: 6px;
+
+    .icon {
+        font-size: 1.3rem;
+        margin-top: -14px;
     }
-}
-@media(max-width:600px) {
-    .banner-content{
-        margin-top: 35px;
+
+    .icon-label {
+        font-size: 12px;
     }
 }
 
 @media (max-width: 480px) {
-    .banner-image img{
-        width: 390px;
-    }
-
-    .banner-content {
-        gap: 1.5rem;
-    }
-
-    .banner-image img {
-        max-width: 100%;
-        height: auto;
+    .banner-container {
+        padding: 15px;
     }
 
     #banner-heading {
-        font-size: 2.1rem;
+        font-size: 1.8rem;
     }
-    .banner-name {
-        font-size: 2.1rem;
-    }
+
     .banner-para {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
     }
-    .social-icons{
-        margin-left: 60px;
-    }
-    .social-icons .icon {
-        width: 35px;
-        height: 35px;
-        padding: 8px;
-    }
-}
-@media (max-width:450px){
-   .banner-content{
-     margin-top: 2px;
-   }
-   .social-icons{
-    margin-left: 60px;
-   }
-}
 
-@media(max-width: 350px){
-    #banner-heading{
-        font-size: 1.7rem;
+    .skills-btn {
+        font-size: 0.8rem;
+        padding: 6px 15px;
     }
-    .banner-name{
-        font-size: 1.7rem;
+
+    .social-icons {
+        flex-direction: row;
+        gap: 10px;
     }
-    .banner-para{
-        font-size: 1.1rem;
+
+    .icon {
+        font-size: 1rem;
     }
-    .social-icons{
-        margin-left: 55px;
-    }
-    .social-icons a .icon{
-        margin-left: -12px;
+
+    .icon-label {
+        font-size: 10px;
+        margin-left: 2rem;
+        bottom: -30px;
+        top: 0.7rem;
     }
 }
-

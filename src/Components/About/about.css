@@ -54,6 +54,7 @@
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 10px;
+    margin-bottom: 50px;
 }
 
 .skill-box {
@@ -95,36 +96,90 @@
     transform: scale(1);
 }
 
+.badge-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    margin: 20px auto;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.badge-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: box-shadow 0.2s ease-in-out, transform 0.3s ease;
+    border: 1px solid #c8c5c5;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 20px 8px;
+    flex: 1 1 calc(33.333% - 30px); /* Default: 3 cards per row */
+    max-width: 250px;
+    min-width: 250px;
+    height: 180px;
+    box-shadow: 0px 1px 1px 1px #e3e1e1;
+    text-align: center;
+    box-sizing: border-box;
+}
+.badge-card:hover {
+    box-shadow: 0 8px 8px #d8d8d8;
+    transform: scale(1.02);
+  }
+
+.badge-card-image {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    border: 1px solid #e5e1e1;
+    object-fit: contain;
+}
+
 @media (max-width: 768px) {
-    .content{
+    .content {
         margin-top: -30px;
     }
-    .about-title{
+
+    .about-title {
         font-size: 2.1rem;
     }
+
     .about-para {
         font-size: 1rem;
     }
+
     .skill-heading {
         font-size: 2.1rem;
     }
+
     .skills-container {
         gap: 15px;
     }
+
     .skill-box {
         width: 100px;
         height: 80px;
         font-size: 1rem;
     }
+
     .skills {
         margin-top: -20px;
     }
 }
 
-@media (max-width: 600px) {
-    .content{
+@media (max-width: 730px) {
+    .content {
         margin-top: 5px;
     }
+
     .content, .skills {
         max-width: 100%;
         text-align: center;
@@ -133,18 +188,30 @@
     .skills-container {
         justify-content: center;
     }
+
+    .badge-card {
+        flex: 1 1 100%; /* Single card per row after 730px */
+    }
 }
-@media(max-width: 450px) {
-    .content{
+
+@media (max-width: 450px) {
+    .content {
         margin-top: -35px;
     }
-    .about-title{
+
+    .about-title {
         font-size: 1.8rem;
     }
-    .about-para{
+
+    .about-para {
         font-size: 1rem;
     }
-    .skill-heading{
+
+    .skill-heading {
         font-size: 1.8rem;
+    }
+
+    .badge-card {
+        height: 180px; /* Reduced height for small screens */
     }
 }
