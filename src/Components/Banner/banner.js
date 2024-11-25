@@ -20,7 +20,7 @@ export default function Banner() {
           <div class="banner-content">
            <h1 id="banner-heading">Hello, I'm Sobia</h1>
             <p class="banner-para">
-             Excited to develop responsive, intuitive and user-focused websites as a Front-End Developer
+            Excited to Develop Responsive, Intuitive, and User-Focused Websites as a Front-End Developer
             </p>
             <Link to="/projects" className="skills-btn">See My Work</Link>
         <div class="social-icons">
