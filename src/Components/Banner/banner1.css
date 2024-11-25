@@ -25,7 +25,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-bottom: 20px; */
 }
 
 .banner-content #banner-heading,
@@ -111,12 +110,19 @@ body {
 
 @media (max-width:1024px) {
     .banner-container{
-        min-height: 40vh;
+        min-height: 35vh;
+    }
+    #banner-heading{
+        margin-bottom: 5px;
+    }
+    .banner-para{
+        font-size: 2rem;
+        line-height: 45px;
     }
 }
 @media (max-width: 768px) {
     .banner-container{
-        min-height: 38vh;
+        min-height: 33vh;
     }
     .banner-content {
         max-width: 90%;
@@ -124,16 +130,19 @@ body {
 
     #banner-heading {
         font-size: 2.3rem;
+        margin-bottom: 3px;
     }
 
     .banner-para {
         font-size: 1.5rem;
         line-height: 2.1rem;
+        margin-bottom: 3px;
     }
 
     .skills-btn {
         font-size: 0.9rem;
         padding: 8px 20px;
+        margin-bottom: 3px;
     }
 
     .icon {
