@@ -138,7 +138,7 @@
     max-width: 250px;
     min-width: 250px;
     height: 180px;
-    box-shadow: 0px 1px 1px 1px #e3e1e1;
+    box-shadow: 1px 1px 1px 1px #e3e1e1;
     text-align: center;
     box-sizing: border-box;
 }

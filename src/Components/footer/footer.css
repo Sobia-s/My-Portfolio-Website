@@ -97,6 +97,9 @@
     .footer-icons {
         gap: 10px;
     }
+    .footer-icons a{
+        font-size: 20px;
+    }
     .footer-last-container {
         font-size: 0.9rem;
     }
@@ -116,6 +119,12 @@
         margin-top: -3px;
     }
     .page-link {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    .footer-icons a{
+        font-size: 17px;
+    }
+    .footer-name{
+        font-size: 13px;
     }
 }

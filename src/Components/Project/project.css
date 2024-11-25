@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 .project-container {
   background-color: #faf3f3;
   max-width: 100%;
@@ -61,20 +60,6 @@
   width: 90%;
 }
 
-/* .cards {
-  background-color: #ffffff;
-  border-radius: 5px;
-  transition: box-shadow 0.2s ease-in-out, transform 0.3s ease;
-  border: 1px solid #c8c5c5;
-  color: #393d40;
-  overflow: hidden;
-  cursor: pointer;
-  padding: 20px 8px;
-  flex: 1 1 calc(33.333% - 30px);
-  max-width: 300px;
-  box-shadow: 1px 1px 1px 1px #e3e1e1;
-} */
-
 .cards {
   background-color: #ffffff;
   border-radius: 5px;
@@ -87,10 +72,14 @@
   flex: 1 1 calc(33.333% - 30px);
   max-width: 300px;
   box-shadow: 1px 1px 1px 1px #e3e1e1;
-  height: 400px;
+  height: 390px;
   display: flex;
-  flex-direction: column; /* Ensure content stacks vertically */
-  justify-content: space-between; /* Keep spacing consistent */
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards:hover {
+  box-shadow: 0 8px 8px #d8d8d8;
+  transform: scale(1.02);
 }
 
 .card-content {
@@ -117,35 +106,12 @@
   overflow: hidden;
 }
 
-
-.cards:hover {
-  box-shadow: 0 8px 8px #d8d8d8;
-  transform: scale(1.02);
-}
-
 .card-img {
   width: 100%;
   height: auto;
   border-radius: 5px;
   border: 1px solid #e5e1e1;
 }
-
-/* .card-content {
-  text-align: center;
-  margin-top: 15px;
-  padding: 10px;
-} */
-
-
-/* .project-description {
-  font-size: clamp(0.8rem, 1.2vw, 1rem);
-  color: #696868;
-  margin-top: 8px;
-  letter-spacing: 0.7px;
-  line-height: 1.5rem;
-  text-align: left;
-} */
-
 .modal {
   position: fixed;
   top: 0;
@@ -207,43 +173,40 @@
 @media (max-width: 1024px) {
   .cards {
     flex: 1 1 calc(50% - 30px);
+    max-height: 23rem;
   }
-
   .project-content {
     width: 70%;
   }
-
   .project-main-title {
     font-size: 2.2rem;
   }
-
   .project-para {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 620px) {
   .cards {
     flex: 1 1 100%;
     max-width: 400px;
+    max-height: 24rem;
   }
-
   .project-content {
     width: 95%;
     margin-top: 25px;
   }
-
   .project-main-title {
     font-size: 1.9rem;
     margin-top: 15px;
   }
-
   .project-para {
     font-size: 0.9rem;
     line-height: 1.7;
     margin-bottom: -2px;
   }
 }
+
 @media (max-width:450px) {
 .project-content{
   margin-top: -12px;
@@ -251,16 +214,17 @@
 }
 
 @media (max-width: 400px) {
+  .cards{
+    max-height: 22rem;
+  }
   .project-content {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
-
   .project-main-title {
     font-size: 1.6rem;
   }
-
   .project-para {
     font-size: 0.9rem;
     line-height: 1.8;

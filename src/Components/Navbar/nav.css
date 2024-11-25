@@ -3,11 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Source Sans Pro, sans-serif;
 }
-
 .nav-container {
     display: flex;
     align-items: center;
@@ -69,6 +67,7 @@ body {
 
     .logo-img {
         padding-left: 0;
+        width: 7rem;
     }
 
     .nav-items {
