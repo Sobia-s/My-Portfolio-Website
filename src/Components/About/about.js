@@ -4,10 +4,12 @@ import { useEffect, useState } from 'react';
 import './about.css';
 import badge1 from './badges/FrontEnd Badge.png';
 import badge2 from './badges/JS Badge.png';
-import badge3 from './badges/techmakers.png';
+import badge3 from './badges/html.png';
 import badge4 from './badges/quiz.png';
 import badge5 from './badges/developer.png';
-import badge6 from './badges/html.png';
+import badge6 from './badges/techmakers.png';
+import badge7 from './badges/Women in AI.png';
+import badge8 from './badges/Learning badge.png';
 
 function About() {
    const location = useLocation();
@@ -17,12 +19,14 @@ function About() {
   }, [location]);
 
   const badges = [
-    {id: 1, src: badge1, alt: 'Meta Frontend Developer badge'},
-    {id: 2, src: badge2, alt: 'Cisco Javascript Essentials_1 badge'},
-    {id: 3, src: badge3, alt: 'Women Techmakers badge'},
-    {id: 4, src: badge4, alt: 'First learning quiz badge from google for developers'},
-    {id: 5, src: badge5, alt: 'Join Google Developer Program'},
-    {id: 6, src: badge6, alt: 'First learning badge complete from google for developers'},
+    { id: 1, src: badge1, alt: 'Meta Front-End Developer Badge' },
+    { id: 2, src: badge2, alt: 'Cisco JavaScript Essentials 1 Badge' },
+    { id: 3, src: badge3, alt: 'Google Developer Learning Badge 1' },
+    { id: 4, src: badge4, alt: 'Google Developer Quiz Badge' },
+    { id: 5, src: badge5, alt: 'Google Developer Program Membership Badge' },
+    { id: 6, src: badge6, alt: 'Women Techmakers Membership Badge from Google' },
+    { id: 7, src: badge7, alt: 'Women in AI Badge from Google' },
+    { id: 8, src: badge8, alt: 'Google Developer Learning Badge 2' }
   ]
   const [selectedItem, setSelectedItem] = useState(null);
 

@@ -12,6 +12,9 @@ import img7 from './images/img7.png';
 import img8 from './images/img8.png';
 import img9 from './images/img9.png';
 import img10 from './images/img10.png';
+import img11 from  './images/img11.png';
+import img12 from './images/img12.png';
+import img13 from './images/img13.png';
 
 export function Certificate() {
   const location = useLocation();
@@ -21,16 +24,19 @@ export function Certificate() {
   }, [location]);
 
   const certificates = [
-    { id: 1, src: img1, alt: 'Meta Front-End Developer Professional Certificate By Coursera' },
-    { id: 2, src: img2, alt: 'JavaScript Essentials 1 By Cisco Networking Academy' },
-    { id: 3, src: img3, alt: 'Build a Full Website using WordPress by Coursera' },
-    { id: 4, src: img4, alt: 'Increase SEO Traffic with WordPress by Coursera' },
-    { id: 5, src: img5, alt: 'Introduction to Microsoft Excel by Coursera' },
-    { id: 6, src: img6, alt: 'Digital Literacy by DigiSkills Training Program' },
-    { id: 7, src: img7, alt: 'Communication & Soft Skills by DigiSkills Training Program' },
-    { id: 8, src: img8, alt: 'Freelancing by DigiSkills Training Program' },
-    { id: 9, src: img9, alt: 'WordPress by DigiSkills Training Program' },
-    { id: 10, src: img10, alt: 'Certification of Appreciation from Women Tech Network' },
+      { id: 1, src: img1, alt: 'Meta Front-End Developer Professional Certificate by Coursera' },
+      { id: 2, src: img2, alt: 'Internship Completion Certificate in Web Development', className: 'img2' },
+      { id: 3, src: img3, alt: 'JavaScript Essentials 1 by Cisco Networking Academy' },
+      { id: 4, src: img4, alt: '5-Day Coding Challenge Certificate by Code Institute' },
+      { id: 5, src: img5, alt: 'Certificate of Participation from Google for Women in AI' },
+      { id: 6, src: img6, alt: 'Certificate of Appreciation from Women Tech Network' },
+      { id: 7, src: img7, alt: 'Build a Full Website Using WordPress by Coursera' },
+      { id: 8, src: img8, alt: 'Increase SEO Traffic with WordPress by Coursera' },
+      { id: 9, src: img9, alt: 'Introduction to Microsoft Excel by Coursera' },
+      { id: 10, src: img10, alt: 'Digital Literacy by DigiSkills Training Program' },
+      { id: 11, src: img11, alt: 'Communication and Soft Skills by DigiSkills Training Program' },
+      { id: 12, src: img12, alt: 'Freelancing by DigiSkills Training Program' },
+      { id: 13, src: img13, alt: 'WordPress by DigiSkills Training Program' }
   ];
 
   const [selectedItem, setSelectedItem] = useState(null);
@@ -59,8 +65,8 @@ export function Certificate() {
               key={item.id}
               onClick={() => handleCardClick(item)}
             >
-              <img src={item.src} alt={item.alt} className="card-image" />
-            </div>
+              <img src={item.src} alt={item.alt} className={`card-image ${item.className || ''}`} style={item.style || {}} />
+           </div>
           ))}
         </div>
 

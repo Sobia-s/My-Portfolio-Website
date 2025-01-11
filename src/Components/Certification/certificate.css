@@ -83,6 +83,12 @@
   height: auto;
   border-radius: 5px;
   border: 1px solid #e5e1e1;
+  object-fit: cover;
+}
+
+.card-image.img2 {
+  height: auto;
+  object-fit: contain; /* Adjust image content to fit within the given height */
 }
 
 .modal {
