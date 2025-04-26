@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './footer.css';
-import img from './img-logo.png';
+import img from '../Navbar/img.png';
 import { FaGithub, FaLinkedin, FaGlobe, FaEnvelope } from 'react-icons/fa';
 
 export function Footer() {
