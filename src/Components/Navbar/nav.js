@@ -1,56 +1,72 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import logo from './img.png';
+import { Link, useLocation } from "react-router-dom";
 import "./nav.css";
+import logo from "./img.png";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-export function Nav() {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
+const Nav = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const location = useLocation();
 
-    useEffect(() => {
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => {
+  setIsMenuOpen(false);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
-        window.addEventListener('resize', handleResize);
-
-        handleResize();
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
-    const toggleMenu = () => {
-        if (isMobile) {
-            setIsOpen(!isOpen);
-        }
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
     };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
-    const closeMenu = () => {
-        if (isMobile) {
-            setIsOpen(false);
-        }
-    };
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="logo-container">
+          <Link to="/" onClick={closeMenu}>
+            <img src={logo} alt="Logo" className="logo" />
+          </Link>
+        </div>
 
-    return (
-        <nav className="nav-container">
-            <div className="hamburger" onClick={toggleMenu}>
-                <div className={`bar ${isOpen ? "open" : ""}`}></div>
-                <div className={`bar ${isOpen ? "open" : ""}`}></div>
-                <div className={`bar ${isOpen ? "open" : ""}`}></div>
-            </div>
-            <Link to="/" onClick={closeMenu}>
-                <img src={logo} alt="Logo" width={130} height={90} className="logo-img" />
-            </Link>
-            <ul className={`nav-items ${isOpen ? "open" : ""}`}>
-                <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-                <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-                <li><Link to="/projects" onClick={closeMenu}>Portfolio</Link></li>
-                <li><Link to="/certificates" onClick={closeMenu}>Certificates</Link></li>
-                <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
-            </ul>
-        </nav>
-    );
-}
+        <div className="hamburger" onClick={toggleMenu}>
+        {isMenuOpen ? <FaTimes className="menu-icon" /> : <FaBars className="menu-icon" />}
+        </div>
+
+        <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+          <li>
+            <Link to="/" className={location.pathname === "/" ? "active" : ""} onClick={closeMenu}>Home</Link>
+          </li>
+          <li>
+            <Link to="/about" className={location.pathname === "/about" ? "active" : ""} onClick={closeMenu}>About</Link>
+          </li>
+          <li>
+            <Link to="/projects" className={location.pathname === "/portfolio" ? "active" : ""} onClick={closeMenu}>Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/certificates" className={location.pathname === "/certificates" ? "active" : ""} onClick={closeMenu}>Certificates</Link>
+          </li>
+          <li>
+            <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""} onClick={closeMenu}>Contact</Link>
+          </li>
+        </ul>
+
+
+        <div className="menu-button-wrapper">
+          <Link to="/contact" className="hire-me-btn" onClick={closeMenu}>Hire Me</Link>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Nav;
+
+
+
+
 

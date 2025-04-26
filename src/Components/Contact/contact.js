@@ -69,7 +69,7 @@ function Contact() {
       </div>
     </div>
     <div className="contact-form-container">
-      <h1 className='form-heading'>Send me an Email</h1>
+      <h1 className='form-heading'>Let's Start A New Project!</h1>
       <form className="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="name" className='contact-labels'>Name</label>
         <input
@@ -105,7 +105,7 @@ function Contact() {
         <p className='error-message'>
           Unable to submit. Please try again or email me at sobiasoomro97@gmail.com. Thank you!
         </p>}
-        <button type="submit" className="submit_btn">Send Email</button>
+        <button type="submit" className="submit_btn">Send Message</button>
       </form>
     </div>
   </div>

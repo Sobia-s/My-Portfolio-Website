@@ -20,21 +20,21 @@ export default function Banner() {
           <div class="banner-content">
            <h1 id="banner-heading">Hello, I'm Sobia</h1>
             <p class="banner-para">
-            Excited to Develop Responsive, Intuitive, and User-Focused Websites as a Front-End Developer
+            I Help Brands and Personal Brands Grow Through Engaging, Responsive Websites that Thrive
             </p>
             <Link to="/projects" className="skills-btn">See My Work</Link>
         <div class="social-icons">
             <a href="https://github.com/Sobia-s" target="_blank" rel="noreferrer" aria-label="GitHub Profile">
-                <FaGithub class="icon" />
-                <span class="icon-label">GitHub</span>
+                <FaGithub className="icon" />
+                <span className="icon-label">GitHub</span>
             </a>
             <a href="https://www.linkedin.com/in/sobiasoomro/" target="_blank" rel="noreferrer" aria-label="LinkedIn Profile">
-                <FaLinkedin class="icon" />
-                <span class="icon-label">LinkedIn</span>
+                <FaLinkedin className="icon" />
+                <span className="icon-label">LinkedIn</span>
             </a>
             <a href="https://g.dev/sobiasoomro" target="_blank" rel="noreferrer" aria-label="Google Developer Profile">
-                <FaGlobe class="icon" />
-                <span class="icon-label">Google Developer Profile</span>
+                <FaGlobe className="icon" />
+                <span className="icon-label">Google Developer Profile</span>
             </a>
             <a href="mailto:sobiasoomro97@gmail.com" target="_blank" rel="noreferrer" aria-label="Send Email">
                <FaEnvelope className="icon" />

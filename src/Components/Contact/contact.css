@@ -1,6 +1,7 @@
 html, body {
   overflow-x: hidden;
 }
+
 * {
   padding: 0px;
   margin: 0px;
@@ -14,6 +15,7 @@ html, body {
   background-color: #faf3f3;
   height: 100%;
   padding: 20px;
+  margin-top: 60px;
 }
 
 .inner-box {
@@ -166,20 +168,21 @@ html, body {
 }
 
 .submit_btn {
-  padding: 10px 28px;
   background-color: #a04d66;
   color: #ffffff;
-  border: none;
+  padding: clamp(6px, 1.2vw, 12px) clamp(12px, 3vw, 24px);
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-weight: bold;
   border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  border: none;
   transition: all 0.3s ease;
+  cursor: pointer;
+  flex-direction: flex-end;
 }
-
-.submit_btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+.submit_btn:hover{
+   transform: translateY(-2px);
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 700px) {

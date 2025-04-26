@@ -12,6 +12,7 @@
   justify-content: center;
   padding: 20px;
   min-height: 100vh;
+  margin-top: 60px;
 }
 
 .certificate-inner-container {
@@ -19,6 +20,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .certificate-content {
@@ -157,7 +159,7 @@
   }
   .certificate-content {
     width: 95%;
-    margin-top: 25px;
+    /* margin-top: 10px; */
   }
   #certificate_heading {
     font-size: 1.9rem;
@@ -172,7 +174,7 @@
 
 @media (max-width:450px) {
   .certificate-content{
-    margin-top: -10px;
+    /* margin-top: -10px; */
   }
   #certificate_heading{
     font-size: 1.4rem;
