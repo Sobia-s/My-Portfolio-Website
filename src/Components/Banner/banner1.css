@@ -1,191 +1,205 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .banner-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #d2c8ac;
-    background-color: #d8d1b8;
-    min-height: 70vh;
-    padding: 20px;
-    text-align: center;
-    margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d2c8ac;
+  background-color: #d8d1b8;
+  min-height: 70vh;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .banner-content {
-    max-width: 75%;
-    width: 100%;
-    gap: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 80%;
+  width: 100%;
+  gap: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lumina-link {
+  color: #a04d66; /* or your brand color */
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+  text-decoration: underline;
+}
+
+.lumina-link:hover {
+  opacity: 1;
+  transform: translateY(-5px);
 }
 
 .banner-content #banner-heading,
 .banner-content .banner-subheading,
 .banner-content .banner-para {
-    font-family: Aboreto, serif;
-    color: #2f3834;
-    letter-spacing: 1px;
+  font-family: Aboreto, serif;
+  color: #2f3834;
+  letter-spacing: 1px;
 }
 
 #banner-heading {
-    font-size: 3rem;
-    font-weight: 350;
+  font-size: 3rem;
+  font-weight: 350;
 }
 
 .banner-para {
-    font-size: 1.9rem;
-    letter-spacing: 1px;
-    line-height: 2.7rem;
-    color: #2f3834;
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  color: #2f3834;
 }
 
 .skills-btn {
-    background-color: #a04d66;
-    color: #ffffff;
-    padding: clamp(6px, 1.2vw, 12px) clamp(12px, 3vw, 24px);
-    font-size: clamp(14px, 1.2vw, 18px);
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-    border: none;
-    transition: all 0.3s ease;
-  }
-  .skills-btn:hover{
-     transform: translateY(-2px);
-     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  }
+  background-color: #a04d66;
+  color: #ffffff;
+  padding: clamp(6px, 1.2vw, 12px) clamp(12px, 3vw, 24px);
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+.skills-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
 
 .social-icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-    position: relative;
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  position: relative;
 }
 
 .social-icons a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    font-size: 1rem;
-    color: #2f3834;
-    transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 1rem;
+  color: #2f3834;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .icon {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .icon-label {
-    display: block;
-    position: absolute;
-    bottom: -36px;
-    font-style: italic;
-    margin-left: 20px;
-    transform: translateX(-50%) translateY(10px);
-    font-size: 14px;
-    color: #a04d66;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    width: 30px;
-    height: 25px;
+  display: block;
+  position: absolute;
+  bottom: -36px;
+  font-style: italic;
+  margin-left: 20px;
+  transform: translateX(-50%) translateY(10px);
+  font-size: 14px;
+  color: #a04d66;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: 30px;
+  height: 25px;
 }
 
 .social-icons a:hover .icon-label {
-    opacity: 1;
-    transform: translateX(-50%) translateY(-5px);
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
 }
 
-@media (max-width:1024px) {
-    .banner-container{
-        min-height: 50vh;
-    }
-    #banner-heading{
-        margin-bottom: 5px;
-    }
-    .banner-para{
-        font-size: 2rem;
-        line-height: 45px;
-    }
+@media (max-width: 1024px) {
+  .banner-container {
+    min-height: 50vh;
+  }
+  #banner-heading {
+    margin-bottom: 5px;
+  }
+  .banner-para {
+    font-size: 2rem;
+    line-height: 45px;
+  }
 }
 @media (max-width: 768px) {
-    .banner-container{
-        min-height: 40vh
-    }
-    .banner-content {
-        max-width: 90%;
-    }
+  .banner-container {
+    min-height: 40vh;
+  }
+  .banner-content {
+    max-width: 90%;
+  }
 
-    #banner-heading {
-        font-size: 2.3rem;
-        margin-bottom: 3px;
-    }
+  #banner-heading {
+    font-size: 2.3rem;
+    margin-bottom: 3px;
+  }
 
-    .banner-para {
-        font-size: 1.5rem;
-        line-height: 2.1rem;
-        margin-bottom: 3px;
-    }
+  .banner-para {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    margin-bottom: 3px;
+  }
 
-    .skills-btn {
-        font-size: 0.9rem;
-        padding: 8px 20px;
-        margin-bottom: 3px;
-    }
+  .skills-btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    margin-bottom: 3px;
+  }
 
-    .icon {
-        font-size: 1.3rem;
-        margin-top: -1px;
-    }
+  .icon {
+    font-size: 1.3rem;
+    margin-top: -1px;
+  }
 
-    .icon-label {
-        font-size: 12px;
-    }
+  .icon-label {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
-    .banner-container {
-        padding: 10px;
-        min-height: 50vh;
-    }
-    #banner-heading {
-        font-size: 2.1rem;
-        margin-bottom: 4px;
-    }
-    .banner-para {
-        font-size: 1.3rem;
-        line-height: 2rem;
-        margin-bottom: 4px;
-    }
-    .skills-btn {
-        font-size: 0.9rem;
-        padding: 8px 20px;
-        margin-bottom: 3px;
-        margin-top: 3px;
-    }
-    .social-icons {
-        flex-direction: row;
-        gap: 12px;
-    }
-    .icon {
-        font-size: 1.2rem;
-    }
-    .icon-label {
-        font-size: 10px;
-        margin-left: 2rem;
-        bottom: -30px;
-        top: 1.8rem;
-    }
+  .banner-container {
+    padding: 10px;
+    min-height: 50vh;
+  }
+  #banner-heading {
+    font-size: 2.1rem;
+    margin-bottom: 4px;
+  }
+  .banner-para {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 4px;
+  }
+  .skills-btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+  .social-icons {
+    flex-direction: row;
+    gap: 12px;
+  }
+  .icon {
+    font-size: 1.2rem;
+  }
+  .icon-label {
+    font-size: 10px;
+    margin-left: 2rem;
+    bottom: -30px;
+    top: 1.8rem;
+  }
 }
