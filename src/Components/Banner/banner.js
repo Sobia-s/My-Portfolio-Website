@@ -23,7 +23,7 @@ export default function Banner() {
             I help web developers grow their careers and unlock opportunities by
             building a strong digital presence with
             <a
-              href="https://tally.so/r/mKj6GA"
+              href="https://tally.so/r/3yalkg"
               target="_blank"
               rel="noreferrer"
               className="lumina-link"
