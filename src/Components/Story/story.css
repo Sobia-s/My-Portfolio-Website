@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.story-container {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 6rem 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.8;
+  color: #385070;
+}
+
+.story-inner-container {
+  max-width: 55rem;
+  margin: auto;
+  text-align: left;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.story-container-heading {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 350;
+  margin-bottom: 1rem;
+}
+
+.story-container-second-heading {
+  margin: 1.5rem 0;
+}
+
+.story-container-para {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+.story-container-portfolio-para {
+  font-size: 1.7rem;
+}
+.story-container-list {
+  font-size: 1.2rem;
+  line-height: 3rem;
+  margin: 1rem 0;
+  list-style-position: inside;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .story-container {
+    padding: 5rem 1rem 3rem 1rem; /* reduce padding on tablets */
+  }
+
+  .story-inner-container {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .story-container-heading {
+    font-size: 2rem;
+  }
+
+  .story-container-para,
+  .story-container-list {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
+  .story-lumina-link {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .story-container-second-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .story-container-second-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+  }
+
+  .story-lumina-link {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-container {
+    padding: 5rem 1rem 2rem 1rem;
+  }
+  .story-container-heading {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+  }
+  .story-container-second-heading {
+    font-size: 1.3rem;
+  }
+  .story-container-para,
+  .story-container-list {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  .story-lumina-link {
+    font-size: 1.5rem;
+  }
+}

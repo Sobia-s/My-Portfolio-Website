@@ -1,33 +1,46 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import './about.css';
-import badge1 from './badges/FrontEnd Badge.png';
-import badge2 from './badges/JS Badge.png';
-import badge3 from './badges/html.png';
-import badge4 from './badges/quiz.png';
-import badge5 from './badges/developer.png';
-import badge6 from './badges/techmakers.png';
-import badge7 from './badges/Women in AI.png';
-import badge8 from './badges/Learning badge.png';
+import { useLocation, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import "./about.css";
+import badge1 from "../../Assets/badges/1.png";
+import badge2 from "../../Assets/badges/2.png";
+import badge3 from "../../Assets/badges/3.png";
+import badge4 from "../../Assets/badges/4.png";
+import badge5 from "../../Assets/badges/5.png";
+import badge6 from "../../Assets/badges/6.png";
+import badge7 from "../../Assets/badges/7.png";
+import badge8 from "../../Assets/badges/8.png";
+import badge9 from "../../Assets/badges/9.png";
 
 function About() {
-   const location = useLocation();
+  const location = useLocation();
 
   useEffect(() => {
-    document.title = "About Sobia Soomro | Frontend Developer";
+    document.title = "About Me - React Developer";
   }, [location]);
 
   const badges = [
-    { id: 1, src: badge1, alt: 'Meta Front-End Developer Badge' },
-    { id: 2, src: badge2, alt: 'Cisco JavaScript Essentials 1 Badge' },
-    { id: 3, src: badge3, alt: 'Google Developer Learning Badge 1' },
-    { id: 4, src: badge4, alt: 'Google Developer Quiz Badge' },
-    { id: 5, src: badge5, alt: 'Google Developer Program Membership Badge' },
-    { id: 6, src: badge6, alt: 'Women Techmakers Membership Badge from Google' },
-    { id: 7, src: badge7, alt: 'Women in AI Badge from Google' },
-    { id: 8, src: badge8, alt: 'Google Developer Learning Badge 2' }
-  ]
+    { id: 1, src: badge1, alt: "Meta Front-End Developer Badge" },
+    { id: 2, src: badge2, alt: "Cisco JavaScript Essentials 1 Badge" },
+    { id: 3, src: badge3, alt: "Google Developer Program Membership Badge " },
+    {
+      id: 4,
+      src: badge4,
+      alt: "Women Techmakers Membership Badge from Google",
+    },
+    { id: 5, src: badge5, alt: "Google Developer Quiz Completion Badge" },
+    {
+      id: 6,
+      src: badge6,
+      alt: "Google Developer Learning Badge 1",
+    },
+    { id: 7, src: badge7, alt: "Google Developer Learning Badge 2" },
+    {
+      id: 8,
+      src: badge8,
+      alt: "Women in AI Summit Registration Badge from Google",
+    },
+    { id: 9, src: badge9, alt: "Google IO 2025 Registration Badge" },
+  ];
   const [selectedItem, setSelectedItem] = useState(null);
 
   const handleCardClick = (item) => {
@@ -38,39 +51,74 @@ function About() {
     setSelectedItem(null);
   };
   return (
-    <div className="container">
-      <div className="content">
-        <h1 className="about-title">About Me</h1>
+    <div className="about-container">
+      <div className="about-inner-container">
+        <div className="about-content">
+          <h1 className="about-main-title">💁‍♀️Meet Sobia</h1>
           <p className="about-para">
-          I'm Sobia, a Front-End Developer specializing in developing intuitive, visually engaging websites that offer seamless user experiences. I transform designs into optimized, user-centric sites, with projects that showcase my abilities—including this portfolio, a visually compelling e-commerce site, an interactive restaurant site, and more. With strong proficiency in creating responsive websites, I prioritize delivering exceptional user experiences and am eager to collaborate with innovative teams and professionals to create impactful, user-centered solutions.
+            Hi, I build fast, responsive websites that solve problems, help
+            brands thrive, and reflect personality through storytelling. I love
+            turning ideas into interactive experiences and creating digital
+            products, from portfolios to projects that delight users, with a
+            passion for bringing ideas to life on the web!
+            <br />
+            From specialization to real-world projects, I’ve learned what makes
+            a digital presence effective. Knowing how hard it is to get noticed,
+            I’m continuously leveraging my skills in a challenging ways and
+            building:
+            <br />
+            <span className="about-unique-para">Lumina</span> - A portfolio to
+            help web developers build their identity & unlock real opportunities{" "}
+            <br />
+            <span className="about-unique-para">My Goal:</span> To help web
+            developers launch a fast, professional and custom portfolio that
+            opens real opportunities!!
+            <br />
+            <Link to="/story" className="about-link hover-animate">
+              Read My Story
+            </Link>
           </p>
         </div>
-        <div className="skills">
-          <h1 className="skill-heading">My Expertise</h1>
-          <div className="skills-container">
-          <div className="skill-box">ReactJS</div>
-          <div className="skill-box">JavaScript</div>
-          <div className="skill-box">HTML</div>
-          <div className="skill-box">CSS</div>
-          <div className="skill-box">GitHub</div>
-          <div className="skill-box">UI/UX</div>
-          <div className="skill-box">WordPress</div>
-          <div className="skill-box">Figma</div>
-        </div>
-       </div>
-       <div className='badges'>
-        <div className='badges-conatiner'>
-          <h1 className="badge-heading">My Achievements</h1>
-          <div className="badge-card-container">
-          {badges.map((item) => (
-            <div
-              className="badge-card"
-              key={item.id}
-              onClick={() => handleCardClick(item)}
-            >
-              <img src={item.src} alt={item.alt} className="badge-card-image" />
+        <div className="about-skills-container">
+          <h1 className="about-skills-heading">My Expertise</h1>
+          <div className="about-skills-boxes">
+            <div className="about-skill-box hover-animate">React</div>
+            <div className="about-skill-box hover-animate">JavaScript</div>
+            <div className="about-skill-box hover-animate">HTML</div>
+            <div className="about-skill-box hover-animate">CSS</div>
+            <div className="about-skill-box hover-animate">GitHub</div>
+            <div className="about-skill-box hover-animate">
+              Responsive Design
             </div>
-          ))}
+            <div className="about-skill-box hover-animate">
+              Frontend Development
+            </div>
+            <div className="about-skill-box hover-animate">
+              Digital Product Creation
+            </div>
+            <div className="about-skill-box hover-animate">UI/UX</div>
+            <div className="about-skill-box hover-animate">WordPress</div>
+            <div className="about-skill-box hover-animate">Figma</div>
+          </div>
+        </div>
+        <div className="about-badges-container">
+          <div className="about-badges-inner-conatiner">
+            <h1 className="about-badges-heading">My Achievements</h1>
+            <div className="about-badges-card-container">
+              {badges.map((item) => (
+                <div
+                  className="about-badges-card"
+                  key={item.id}
+                  onClick={() => handleCardClick(item)}
+                >
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="about-badges-card-img"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -88,9 +136,9 @@ function About() {
             </div>
           </div>
         )}
-       </div>
-       </div>
-);
+      </div>
+    </div>
+  );
 }
 
 export default About;

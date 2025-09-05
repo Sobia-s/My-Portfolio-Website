@@ -1,0 +1,83 @@
+.shared-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.shared-gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.shared-gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.lumina-cta-container {
+  color: #385070;
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.lumina-cta-text {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.lumina-cta-link {
+  color: #385070;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.lumina-cta-link:hover {
+  transform: translateY(-3px);
+}
+
+.lumina-cta-icon {
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 1024px) {
+  .lumina-cta-container {
+    font-size: 1.6rem;
+    margin: 1.2rem 0;
+  }
+  .lumina-cta-text {
+    font-size: 1.6rem;
+  }
+  .lumina-cta-icon {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lumina-cta-container {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+  }
+  .lumina-cta-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lumina-cta-container {
+    font-size: 1.2rem;
+    margin: 0.8rem 0;
+    line-height: 2rem;
+  }
+  .lumina-cta-icon {
+    font-size: 1rem;
+  }
+}

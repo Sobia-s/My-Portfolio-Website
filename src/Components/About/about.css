@@ -1,224 +1,190 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.container {
-    width: 100%;
-    background-color: #faf3f3;
-    padding: 40px 20px;
-    margin-top: 60px;
+.about-container {
+  background-color: #ffffff;
+  max-width: 100%;
+  text-align: center;
+  padding: 20px 0 40px 0;
+  min-height: 100vh;
+  margin-top: 4rem;
 }
 
-.content {
-    max-width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 15px;
+.about-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
 }
 
-.about-title {
-    font-family: Aboreto, serif;
-    color: #2f3834;
-    letter-spacing: 1px;
-    font-size: 2.5rem;
-    font-weight: 350;
+.about-content {
+  max-width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+.about-main-title {
+  font-family: Aboreto, serif;
+  color: #385070;
+  letter-spacing: 1px;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 .about-para {
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-    line-height: 1.7;
-    margin: 15px 0 40px;
-    color: #4a4a4b;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  line-height: 2.7rem;
+  margin: 15px 0 6rem;
+  color: #385070;
 }
 
-.skills {
-    max-width: 80%;
-    margin: auto;
+.about-unique-para {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #385070;
+  font-weight: 600;
 }
 
-.skill-heading {
-    font-family: Aboreto, serif;
-    color: #2f3834;
-    letter-spacing: 1px;
-    font-size: 2.3rem;
-    font-weight: 350;
-    margin-bottom: 30px;
-    text-align: center;
+.about-link {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  color: #385070;
+  font-weight: 600;
 }
 
-.badge-heading{
-    font-family: Aboreto, serif;
-    color: #2f3834;
-    letter-spacing: 1px;
-    font-size: 2.3rem;
-    font-weight: 350;
-    margin-bottom: 30px;
-    text-align: center;
-}
-.skills-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 10px;
-    margin-bottom: 50px;
+.about-skills-container {
+  max-width: 85%;
+  margin: 2rem 1rem;
 }
 
-.skill-box {
-    background: linear-gradient(to bottom, #eee5e3, #e7dad3);
-    color: #4a4a4b;
-    width: 105px;
-    height: 90px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    letter-spacing: 0.3px;
-    font-weight: 550;
-    transition: box-shadow 0.4s ease, transform 0.4s ease;
-    position: relative;
+.about-skills-heading {
+  font-family: Aboreto, serif;
+  color: #385070;
+  letter-spacing: 1px;
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
-.skill-box:hover {
-    transform: translateY(-5px);
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1), 0 8px 15px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+.about-skills-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.7rem;
+  padding: 0 10px;
 }
 
-.skill-box:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10%;
-    transform: scale(0);
-    transition: transform 0.6s ease;
+.about-skill-box {
+  color: #385070;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #385070;
+  box-shadow: 1px 1px 3px #385070;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  padding: 1.5rem 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+  font-weight: 600;
 }
 
-.skill-box:hover:before {
-    transform: scale(1);
+.about-badges-container {
+  margin-top: 6rem;
 }
 
-.badges{
-    margin-top: 65px;
+.about-badges-inner-conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-.badge-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 10px;
-    margin: 20px auto;
-    width: 80%;
-    box-sizing: border-box;
+.about-badges-heading {
+  font-family: Aboreto, serif;
+  color: #385070;
+  letter-spacing: 1px;
+  line-height: 3.5rem;
+  font-size: 2.3rem;
+  font-weight: 400;
 }
 
-.badge-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-    border-radius: 5px;
-    transition: box-shadow 0.2s ease-in-out, transform 0.3s ease;
-    border: 1px solid #c8c5c5;
-    overflow: hidden;
-    cursor: pointer;
-    padding: 20px 8px;
-    flex: 1 1 calc(33.333% - 30px); /* Default: 3 cards per row */
-    max-width: 250px;
-    min-width: 250px;
-    height: 180px;
-    box-shadow: 1px 1px 1px 1px #e3e1e1;
-    text-align: center;
-    box-sizing: border-box;
+.about-badges-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  margin: 20px auto;
+  width: 80%;
+  box-sizing: border-box;
 }
-.badge-card:hover {
-    box-shadow: 0 8px 8px #d8d8d8;
-    transform: scale(1.02);
+
+.about-badges-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #385070;
+  box-shadow: 1px 1px 3px #385070;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 20px 8px;
+  flex: 1 1 calc(30.333% - 10px);
+  min-width: 1rem;
+  height: 12rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.about-badges-card-img {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  border: 1px solid #385070;
+  object-fit: contain;
+}
+
+.about-badges-card:nth-child(1) .about-badges-card-img,
+.about-badges-card:nth-child(2) .about-badges-card-img {
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .about-badges-card {
+    flex: 1 1 45%; /* 2 card per row */
+    height: 10rem;
   }
-
-.badge-card-image {
-    width: auto;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5px;
-    border: 1px solid #e5e1e1;
-    object-fit: contain;
 }
 
-@media (max-width: 768px) {
-    .content {
-        margin-top: -30px;
-    }
-    .about-title {
-        font-size: 2.1rem;
-    }
-    .about-para {
-        font-size: 1rem;
-    }
-    .skill-heading {
-        font-size: 2.1rem;
-    }
-    .badge-heading{
-        font-size: 2.1rem;
-    }
-    .skills-container {
-        gap: 15px;
-    }
-    .skill-box {
-        width: 100px;
-        height: 80px;
-        font-size: 1rem;
-    }
-    .skills {
-        margin-top: -20px;
-    }
-}
-
-@media (max-width: 730px) {
-    .content {
-        margin-top: 5px;
-    }
-    .content, .skills {
-        max-width: 100%;
-        text-align: center;
-    }
-    .skills-container {
-        justify-content: center;
-    }
-    .badge-card {
-        flex: 1 1 100%;
-    }
-}
-
-@media (max-width: 450px) {
-    .content {
-        margin-top: -35px;
-    }
-    .about-title {
-        font-size: 1.8rem;
-    }
-    .about-para {
-        font-size: 1rem;
-    }
-    .skill-heading {
-        font-size: 1.8rem;
-    }
-    .badge-heading{
-        font-size: 1.8rem;
-    }
-    .badge-card {
-        height: 180px;
-    }
+@media screen and (max-width: 480px) {
+  .about-badges-card {
+    flex: 1 1 90%; /* 1 card per row */
+    height: 8rem;
+  }
+  .about-badges-card-container {
+    gap: 1rem;
+  }
+  .about-main-title,
+  .about-skills-heading,
+  .about-badges-heading {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: -1rem;
+  }
 }
