@@ -86,7 +86,6 @@ function About() {
             <div className="about-skill-box hover-animate">JavaScript</div>
             <div className="about-skill-box hover-animate">HTML</div>
             <div className="about-skill-box hover-animate">CSS</div>
-            <div className="about-skill-box hover-animate">GitHub</div>
             <div className="about-skill-box hover-animate">
               Responsive Design
             </div>
@@ -96,6 +95,7 @@ function About() {
             <div className="about-skill-box hover-animate">
               Digital Product Creation
             </div>
+            <div className="about-skill-box hover-animate">GitHub</div>
             <div className="about-skill-box hover-animate">UI/UX</div>
             <div className="about-skill-box hover-animate">WordPress</div>
             <div className="about-skill-box hover-animate">Figma</div>

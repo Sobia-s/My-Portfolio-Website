@@ -3,6 +3,7 @@ import { useLocation, Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaGlobe, FaEnvelope } from "react-icons/fa";
 import "./banner.css";
 import LuminaSection from "../LuminaCTA/LuminaSection";
+import banner from "../../Assets/Transparent.png";
 
 export default function Banner() {
   const location = useLocation();
@@ -15,7 +16,16 @@ export default function Banner() {
     <>
       <div className="home-banner-container">
         <div className="home-banner-content">
-          <h1 className="home-banner-heading">🙋Hi, I'm Sobia</h1>
+          {/* <h1 className="home-banner-heading">Hi, I'm Sobia👩‍💻</h1> */}
+
+          <h1 className="home-banner-heading">
+            <img
+              src={banner}
+              alt="Girl with laptop"
+              className="home-banner-avatar"
+            />
+            Hi, I'm Sobia
+          </h1>
 
           <p className="home-banner-para">
             A Frontend Web Developer, Turning Ideas into Thriving Digital Brands

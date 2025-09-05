@@ -17,7 +17,7 @@ body {
   height: auto;
   padding: 4rem 0;
   text-align: center;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
 }
 
 .home-banner-content {
@@ -37,8 +37,18 @@ body {
 }
 
 .home-banner-heading {
-  font-size: 3rem;
-  font-weight: 350;
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+  font-weight: 400;
+  overflow: visible;
+  font-size: 3.8rem;
+}
+
+.home-banner-avatar {
+  width: 5rem;
+  height: auto;
+  object-fit: contain;
 }
 
 .home-banner-second-heading {
@@ -174,12 +184,18 @@ body {
 }
 
 @media (max-width: 480px) {
+  .home-banner-content {
+    width: 100%;
+  }
   .home-banner-heading {
     font-size: 2.3rem;
     margin-bottom: 4px;
   }
+  .home-banner-avatar {
+    width: 4rem;
+  }
   .home-banner-para {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2rem;
   }
   .home-banner-button {
@@ -191,8 +207,11 @@ body {
     flex-direction: row;
   }
   .home-banner-second-heading {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 2rem;
+  }
+  .dream-project-inner-container {
+    width: 90%;
   }
   .dream-project-heading {
     font-size: 1.7rem;
