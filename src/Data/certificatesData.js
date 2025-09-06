@@ -1,17 +1,17 @@
-import img1 from "../Assets/certificates/img1.png";
-import img2 from "../Assets/certificates/img2.png";
-import img3 from "../Assets/certificates/img3.png";
-import img4 from "../Assets/certificates/img4.png";
-import img5 from "../Assets/certificates/img5.png";
-import img6 from "../Assets/certificates/img6.png";
-import img7 from "../Assets/certificates/img7.png";
-import img8 from "../Assets/certificates/img8.png";
-import img9 from "../Assets/certificates/img9.png";
-import img10 from "../Assets/certificates/img10.png";
-import img11 from "../Assets/certificates/img11.png";
-import img12 from "../Assets/certificates/img12.png";
-import img13 from "../Assets/certificates/img13.png";
-import img14 from "../Assets/certificates/img14.png";
+import img1 from "../Assets/certificates/1.webp";
+import img2 from "../Assets/certificates/2.webp";
+import img3 from "../Assets/certificates/3.webp";
+import img4 from "../Assets/certificates/4.webp";
+import img5 from "../Assets/certificates/5.webp";
+import img6 from "../Assets/certificates/6.webp";
+import img7 from "../Assets/certificates/7.webp";
+import img8 from "../Assets/certificates/8.webp";
+import img9 from "../Assets/certificates/9.webp";
+import img10 from "../Assets/certificates/10.webp";
+import img11 from "../Assets/certificates/11.webp";
+import img12 from "../Assets/certificates/12.webp";
+import img13 from "../Assets/certificates/13.webp";
+import img14 from "../Assets/certificates/14.webp";
 
 export const certificates = [
   {

@@ -1,15 +1,16 @@
 import { useLocation, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./about.css";
-import badge1 from "../../Assets/badges/1.png";
-import badge2 from "../../Assets/badges/2.png";
-import badge3 from "../../Assets/badges/3.png";
-import badge4 from "../../Assets/badges/4.png";
-import badge5 from "../../Assets/badges/5.png";
-import badge6 from "../../Assets/badges/6.png";
-import badge7 from "../../Assets/badges/7.png";
-import badge8 from "../../Assets/badges/8.png";
-import badge9 from "../../Assets/badges/9.png";
+import badge1 from "../../Assets/badges/1.webp";
+import badge2 from "../../Assets/badges/2.webp";
+import badge3 from "../../Assets/badges/3.webp";
+import badge4 from "../../Assets/badges/4.webp";
+import badge5 from "../../Assets/badges/5.webp";
+import badge6 from "../../Assets/badges/6.webp";
+import badge7 from "../../Assets/badges/7.webp";
+import badge8 from "../../Assets/badges/8.webp";
+import badge9 from "../../Assets/badges/9.webp";
+import banner from "../../Assets/girl with laptop.webp";
 
 function About() {
   const location = useLocation();
@@ -54,7 +55,15 @@ function About() {
     <div className="about-container">
       <div className="about-inner-container">
         <div className="about-content">
-          <h1 className="about-main-title">💁‍♀️Meet Sobia</h1>
+          <h1 className="about-main-title">
+            <img
+              src={banner}
+              alt="Girl with laptop"
+              className="home-banner-img"
+              fetchpriority="high"
+            />
+            Meet Sobia
+          </h1>
           <p className="about-para">
             Hi, I build fast, responsive websites that solve problems, help
             brands thrive, and reflect personality through storytelling. I love

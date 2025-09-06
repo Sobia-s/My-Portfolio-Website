@@ -6,7 +6,14 @@ const Gallery = ({ images }) => (
   <div className="shared-gallery">
     {images.map((image, index) => (
       <div className="shared-gallery-item" key={index}>
-        <img src={image.src} alt={image.alt} />
+        <img
+          src={image.src}
+          alt={image.alt}
+          loading="lazy"
+          width="400"
+          height="300"
+          y
+        />
       </div>
     ))}
   </div>

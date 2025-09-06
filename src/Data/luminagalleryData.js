@@ -1,5 +1,5 @@
-import picture1 from "../Assets/LuminaGallery/1.png";
-import picture2 from "../Assets/LuminaGallery/2.png";
+import picture1 from "../Assets/LuminaGallery/1.webp";
+import picture2 from "../Assets/LuminaGallery/2.webp";
 
 export const luminaGallery = [
   { src: picture1, alt: "Lumina portfolio homepage design" },

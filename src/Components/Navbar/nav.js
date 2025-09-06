@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./nav.css";
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/logo.webp";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Nav = () => {

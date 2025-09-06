@@ -1,15 +1,15 @@
-import img0 from "../Assets/projects/0.png";
-import img1 from "../Assets/projects/1.png";
-import img2 from "../Assets/projects/2.png";
-import img3 from "../Assets/projects/3.png";
-import img4 from "../Assets/projects/4.png";
-import img5 from "../Assets/projects/5.png";
-import img6 from "../Assets/projects/6.png";
-import img7 from "../Assets/projects/7.png";
-import img8 from "../Assets/projects/8.png";
-import img9 from "../Assets/projects/9.png";
-import wpBlogImg from "../Assets/projects/10.png";
-import wpPhotoImg from "../Assets/projects/11.png";
+import img0 from "../Assets/projects/0.webp";
+import img1 from "../Assets/projects/1.webp";
+import img2 from "../Assets/projects/2.webp";
+import img3 from "../Assets/projects/3.webp";
+import img4 from "../Assets/projects/4.webp";
+import img5 from "../Assets/projects/5.webp";
+import img6 from "../Assets/projects/6.webp";
+import img7 from "../Assets/projects/7.webp";
+import img8 from "../Assets/projects/8.webp";
+import img9 from "../Assets/projects/9.webp";
+import wpBlogImg from "../Assets/projects/10.webp";
+import wpPhotoImg from "../Assets/projects/11.webp";
 
 export const projects = [
   {

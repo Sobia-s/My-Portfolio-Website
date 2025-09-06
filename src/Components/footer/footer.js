@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./footer.css";
-import img from "../../Assets/logo.png";
+import img from "../../Assets/logo.webp";
 import { FaGithub, FaLinkedin, FaGlobe, FaEnvelope } from "react-icons/fa";
 
 export function Footer() {

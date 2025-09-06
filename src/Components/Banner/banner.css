@@ -1,19 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Arial", sans-serif;
-}
-
 .home-banner-container {
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(to right, #4a74ab, #385070);
-  /* min-height: 77vh; */
   height: auto;
   padding: 4rem 0;
   text-align: center;
@@ -42,10 +31,10 @@ body {
   gap: 0rem;
   font-weight: 400;
   overflow: visible;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
 }
 
-.home-banner-avatar {
+.home-banner-img {
   width: 5rem;
   height: auto;
   object-fit: contain;
@@ -190,6 +179,7 @@ body {
   .home-banner-heading {
     font-size: 2.3rem;
     margin-bottom: 4px;
+    gap: 0rem;
   }
   .home-banner-avatar {
     width: 4rem;
@@ -215,5 +205,9 @@ body {
   }
   .dream-project-heading {
     font-size: 1.7rem;
+  }
+  .home-banner-button {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
   }
 }
