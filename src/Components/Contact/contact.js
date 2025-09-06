@@ -42,7 +42,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container">
+    <section className="contact-container">
       <div className="contact-inner-container">
         <div className="contact-info-container">
           <h1 className="contact-heading">Let's Connect!</h1>
@@ -148,7 +148,7 @@ function Contact() {
           </form>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

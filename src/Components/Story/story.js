@@ -35,7 +35,7 @@ function Story() {
   }, [location]);
 
   return (
-    <div className="story-container">
+    <section className="story-container">
       <div className="story-inner-container">
         <h1 className="story-container-heading">
           How I Became a Web Developer
@@ -121,7 +121,7 @@ function Story() {
           Thanks for reading - You're great! 💙
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

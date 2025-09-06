@@ -14,7 +14,7 @@ export default function Banner() {
 
   return (
     <>
-      <div className="home-banner-container">
+      <section className="home-banner-container">
         <div className="home-banner-content">
           <h1 className="home-banner-heading">
             <img
@@ -36,7 +36,7 @@ export default function Banner() {
           <Link to="/projects" className="home-banner-button hover-animate">
             See My Work
           </Link>
-          <div className="home-banner-social-icons">
+          <nav className="home-banner-social-icons">
             <a
               href="https://github.com/Sobia-s"
               target="_blank"
@@ -71,18 +71,18 @@ export default function Banner() {
               <FaEnvelope className="home-banner-icon" />
               <span className="home-banner-icon-label">Email</span>
             </a>
-          </div>
+          </nav>
         </div>
-      </div>
+      </section>
 
-      <div className="dream-project-container">
+      <section className="dream-project-container">
         <div className="dream-project-inner-container">
           <h2 className="dream-project-heading">
             Lumina: My Dream Project - Portfolio for Web Developers
           </h2>
           <LuminaSection />
         </div>
-      </div>
+      </section>
     </>
   );
 }

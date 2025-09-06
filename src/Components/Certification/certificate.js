@@ -20,7 +20,7 @@ export function Certificate() {
   };
 
   return (
-    <div className="certificate-container">
+    <section className="certificate-container">
       <div className="certificate-inner-container">
         <div className="certificate-content">
           <h1 className="certificate-container-heading">
@@ -64,7 +64,7 @@ export function Certificate() {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }
 

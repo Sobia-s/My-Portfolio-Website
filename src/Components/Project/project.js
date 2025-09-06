@@ -23,7 +23,7 @@ function Projects() {
   };
 
   return (
-    <div className="project-container">
+    <section className="project-container">
       <div className="project-inner-container">
         <div className="project-content">
           <h2 className="project-main-title">
@@ -114,7 +114,7 @@ function Projects() {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 }
 
