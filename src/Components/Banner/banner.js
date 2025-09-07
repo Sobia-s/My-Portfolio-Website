@@ -78,7 +78,7 @@ export default function Banner() {
       <section className="dream-project-container">
         <div className="dream-project-inner-container">
           <h2 className="dream-project-heading">
-            Lumina: My Dream Project - Portfolio for Web Developers
+            Lumina: My Dream Project, Portfolio for Web Developers
           </h2>
           <LuminaSection />
         </div>

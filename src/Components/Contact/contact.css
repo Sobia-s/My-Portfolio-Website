@@ -3,7 +3,8 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  height: 100%;
+  min-height: 80vh; /* full screen height if needed */
+  height: auto;
   padding: 20px;
   margin-top: 60px;
 }
@@ -170,6 +171,24 @@
   flex-direction: flex-end;
 }
 
+.success-message {
+  color: #385070;
+  font-size: 1.1rem;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  margin-top: -3px;
+  margin-bottom: 18px;
+}
+
+.error-message {
+  color: #e36c6c;
+  font-size: 1.1rem;
+  margin-top: -3px;
+  margin-bottom: 15px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+}
+
 @media (max-width: 800px) {
   .contact-inner-container {
     flex-direction: column;
@@ -182,15 +201,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 400px;
+    width: 100%; /* let it shrink with screen */
+    max-width: 400px;
+    justify-content: left;
   }
   .social-icon {
     font-size: 1.3rem;
     width: 35px;
     height: 35px;
-  }
-  .github-icon {
-    margin-left: 78px;
   }
 }
 
@@ -218,66 +236,29 @@
   .social-label {
     font-size: 1.1rem;
   }
-  .github-icon {
-    margin-left: 65px;
+  .contact-social-icons {
+    justify-content: left;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .contact-info-container {
-    margin-top: -30px;
+    margin-top: -20px;
   }
   .contact-para,
   .social-label {
     font-size: 1rem;
   }
-}
-
-@media (max-width: 400px) {
-  .contact-inner-container {
-    padding: 0 10px;
-  }
-  .contact-info-container {
-    margin-left: -5px;
-  }
-  .contact-para,
-  .social-label {
-    font-size: 0.9rem;
-  }
-  .social-label {
-    margin-left: -8px;
-  }
-  .github-icon {
-    margin-left: 60px;
-  }
-  .contact-social-icons {
-    flex-direction: row;
-  }
-  .contact-form-container {
-    margin-left: -5px;
-    margin-top: 20px;
+  .error-message,
+  .success-message {
+    font-size: 1rem;
+    margin-top: -3px;
+    margin-bottom: 15px;
+    line-height: 26px;
+    letter-spacing: 0.2px;
   }
   .submit_btn {
-    padding: 9px 16px;
-    font-size: 0.9rem;
-    margin-left: 3px;
+    padding: 0.5rem 0.7rem;
+    font-size: 0.8rem;
   }
-}
-
-.submitting-message {
-  color: #a04d66;
-  font-size: 1.1rem;
-  line-height: 26px;
-  letter-spacing: 0.2px;
-  margin-top: -3px;
-  margin-bottom: 18px;
-}
-
-.error-message {
-  color: #e36c6c;
-  font-size: 1.1rem;
-  margin-top: -3px;
-  margin-bottom: 15px;
-  line-height: 26px;
-  letter-spacing: 0.2px;
 }
