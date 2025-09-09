@@ -101,7 +101,7 @@ function Story() {
           build one that helps other web developer?
         </p>
         <p className="story-container-portfolio-para">
-          Lumina - a personal portfolio to help developers:
+          Lumina: a personal portfolio to help developers:
         </p>
 
         <ul className="story-container-list">
