@@ -41,7 +41,7 @@ function About() {
             building:
           </p>
           <p className="about-para">
-            <span className="about-unique-para">Lumina</span> – A portfolio to
+            <span className="about-unique-para">Lumina:</span> A portfolio to
             help web developers build their identity & unlock real opportunities
           </p>
           <p className="about-para">
