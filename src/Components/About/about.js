@@ -47,7 +47,7 @@ function About() {
           <p className="about-para">
             <span className="about-unique-para">My Goal:</span> To help web
             developers launch a fast, professional and custom portfolio that
-            opens real opportunities!
+            opens real opportunities!!
           </p>
           <Link to="/story" className="about-link hover-animate">
             Read My Story
