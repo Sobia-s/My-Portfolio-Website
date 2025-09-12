@@ -39,6 +39,14 @@ function Projects() {
                 alt={project.title}
                 className="project-card-img"
                 loading="lazy"
+                onClick={() => {
+                  if (project.live) {
+                    window.open(project.live, "_blank", "noopener,noreferrer");
+                  } else if (project.code) {
+                    window.open(project.code, "_blank", "noopener,noreferrer");
+                  }
+                }}
+                style={{ cursor: "pointer" }}
               />
 
               <div className="project-card-content">
