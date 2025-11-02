@@ -68,6 +68,7 @@
   }
   .lumina-cta-text {
     font-size: 1.4rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -79,5 +80,9 @@
   }
   .lumina-cta-icon {
     font-size: 1rem;
+  }
+  .lumina-cta-text {
+    font-size: 1.3rem;
+    line-height: 1rem;
   }
 }

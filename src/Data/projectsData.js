@@ -17,13 +17,13 @@ export const projects = [
     image: img0,
     description: (
       <>
-        <h3>Lumina - Your Personal Portfolio</h3>
+        <h3>Lumina - Your Storytelling Portfolio</h3>
         <div className="first-card-description">
           No visual UI. No story. No personality. No presence.
           <br />
           Just GitHub code, often missed opportunities.
           <br />
-          Lumina is coming to solve all these problems for developers:
+          Lumina solves all these problems for developers:
           <br />
           1. Build a strong digital presence
           <br />
@@ -37,7 +37,7 @@ export const projects = [
         </div>
       </>
     ),
-    live: "https://tally.so/r/3yalkg",
+    live: "https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template",
     linkText: "Let's go!",
   },
   {

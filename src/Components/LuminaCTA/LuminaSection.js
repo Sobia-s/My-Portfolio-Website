@@ -22,14 +22,16 @@ const Gallery = ({ images }) => (
 
 const LuminaCTA = () => (
   <h2 className="lumina-cta-container">
-    <span className="lumina-cta-text">Want a Fast Portfolio? {"  "}</span>
+    <span className="lumina-cta-text">
+      Launch Your Storytelling Portfolio In a Day {"  "}
+    </span>
     <a
-      href="https://tally.so/r/3yalkg"
+      href="https://sobia.gumroad.com/l/lumina-reactjs-portfolio-template"
       target="_blank"
       rel="noopener noreferrer"
       className="lumina-cta-link"
     >
-      Come Join In!
+      Lumina is here!
       <FiExternalLink className="lumina-cta-icon" />
     </a>
   </h2>

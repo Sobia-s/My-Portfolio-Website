@@ -101,14 +101,14 @@ function Story() {
           build one that helps other web developer?
         </p>
         <p className="story-container-portfolio-para">
-          Lumina: a personal portfolio to help developers:
+          Lumina: A Personal Portfolio Template for Developers
         </p>
 
         <ul className="story-container-list">
-          <li>Launch quickly without starting from scratch</li>
+          <li>Launch your portfolio quickly without starting from scratch</li>
           <li>Showcase projects with fast, responsive layouts</li>
-          <li>Look polished with clean UI with light/dark mode</li>
-          <li>Easily customize to fit your personal brand</li>
+          <li>Look polished with a clean UI and light/dark modes</li>
+          <li>Easily customize to match your personal brand</li>
         </ul>
         <LuminaSection />
 

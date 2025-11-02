@@ -22,7 +22,6 @@
   font-family: Aboreto, serif;
   color: #ffffff;
   letter-spacing: 1px;
-  line-height: 3.3rem;
 }
 
 .home-banner-heading {
@@ -127,7 +126,7 @@
   color: #385070;
   font-size: 2.3rem;
   font-weight: 500;
-  margin: 2rem 0;
+  margin: 1.7rem 0;
   letter-spacing: 1px;
 }
 
@@ -164,7 +163,7 @@
     font-size: 12px;
   }
   .dream-project-heading {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 2.7rem;
   }
   .dream-project-container {
@@ -204,7 +203,7 @@
     width: 90%;
   }
   .dream-project-heading {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .home-banner-button {
     padding: 0.4rem 0.7rem;

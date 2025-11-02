@@ -30,55 +30,19 @@ export default function Banner() {
             A Frontend Web Developer, Turning Ideas into Thriving Digital Brands
             and Solving Problems through Code
           </p>
-          <p className="home-banner-second-heading">
+          {/* <p className="home-banner-second-heading">
             React Developer | Creator of Digital Products
-          </p>
+          </p> */}
           <Link to="/projects" className="home-banner-button hover-animate">
             See My Work
           </Link>
-          <nav className="home-banner-social-icons">
-            <a
-              href="https://github.com/Sobia-s"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub className="home-banner-icon" />
-              <span className="home-banner-icon-label">GitHub</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/sobiasoomro/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedin className="home-banner-icon" />
-              <span className="home-banner-icon-label">LinkedIn</span>
-            </a>
-            <a
-              href="https://g.dev/sobiasoomro"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGlobe className="home-banner-icon" />
-              <span className="home-banner-icon-label">
-                Google Dev Portfolio
-              </span>
-            </a>
-            <a
-              href="mailto:sobiasoomro97@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaEnvelope className="home-banner-icon" />
-              <span className="home-banner-icon-label">Email</span>
-            </a>
-          </nav>
         </div>
       </section>
 
       <section className="dream-project-container">
         <div className="dream-project-inner-container">
           <h2 className="dream-project-heading">
-            Lumina: My Dream Project, Portfolio for Web Developers
+            Lumina: My Dream Storytelling Portfolio for Developers
           </h2>
           <LuminaSection />
         </div>
