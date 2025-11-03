@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
-import { FaGithub, FaLinkedin, FaGlobe, FaEnvelope } from "react-icons/fa";
 import "./banner.css";
 import LuminaSection from "../LuminaCTA/LuminaSection";
 import banner from "../../Assets/girl with laptop.webp";
@@ -27,8 +26,6 @@ export default function Banner() {
           </h1>
 
           <p className="home-banner-para">
-            {/* A Frontend Web Developer, Turning Ideas into Thriving Digital Brands
-            and Solving Problems through Code */}
             A Frontend Web Developer and the creator of Lumina, on a mission to
             make storytelling portfolios accessible to every developer
           </p>
