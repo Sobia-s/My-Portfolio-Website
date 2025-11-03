@@ -27,12 +27,11 @@ export default function Banner() {
           </h1>
 
           <p className="home-banner-para">
-            A Frontend Web Developer, Turning Ideas into Thriving Digital Brands
-            and Solving Problems through Code
+            {/* A Frontend Web Developer, Turning Ideas into Thriving Digital Brands
+            and Solving Problems through Code */}
+            A Frontend Web Developer and the creator of Lumina, on a mission to
+            make storytelling portfolios accessible to every developer
           </p>
-          {/* <p className="home-banner-second-heading">
-            React Developer | Creator of Digital Products
-          </p> */}
           <Link to="/projects" className="home-banner-button hover-animate">
             See My Work
           </Link>
